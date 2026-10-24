@@ -1,0 +1,41 @@
+# User profiles, credentials and local data
+.damn*/
+**/.damn*/
+.env
+.env.*
+!.env.example
+*credentials*.json
+*secrets*.json
+*.pem
+*.key
+*.pfx
+*.p12
+*.sqlite*
+*.db
+*.log
+desktop.log
+damn-report*.json
+
+# Python / Node / IDE
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local builds and work output
+build/
+dist/
+work/
+outputs/
+*.exe
+*.dll
+*.msi
+*.zip
