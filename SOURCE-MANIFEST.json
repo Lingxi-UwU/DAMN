@@ -1,0 +1,769 @@
+{
+  "schemaVersion": 1,
+  "edition": "public-source",
+  "version": "0.5.6",
+  "preparedAt": "2026-10-25",
+  "license": "DAMN-Source-Noncommercial-1.0",
+  "rightsNotice": "Conditional on actual licensable rights. AI-assisted code; no determination that every file has copyright or that third-party rights are cleared.",
+  "manifestSelfPolicy": "This manifest lists every other packaged file. The ZIP contains these files plus SOURCE-MANIFEST.json; its own digest is not self-referentially embedded.",
+  "excluded": [
+    "full original development folder and Git history",
+    "personal profiles and API keys",
+    "private appearance, activation, issuer and device-binding implementations",
+    "official update and notification service implementation",
+    "original screenshot-derived taxonomy hierarchy and numeric mapping",
+    "old binary releases, caches, logs and real scan reports"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 219,
+      "sha256": "673e4f977c5f818fdca99645a2dc88f8d2e450027265a5f49fb581d41b821dc1",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 425,
+      "sha256": "bc1602b8a510ced40e63080ffef8a31dc5f70f16728d68e338e87bc8509d4e76",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 7997,
+      "sha256": "763b5d4b1eec3512e904d45adf92a9e9347eedf2a4deab9efb31c35baa1745ad",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "PUBLICATION-STATUS.txt",
+      "bytes": 1035,
+      "sha256": "783cd7fe8a367ff0cce881c3bfe763b869233bc3f0b7e8ef9e819ba4493c1d06",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4703,
+      "sha256": "33c2142d8f1bf4f025aba167cfcf6d4da66c25eac80aea8ae16caacd036a5e73",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 2821,
+      "sha256": "ae56879ec2f4f7807ad6188390716e95e49dfdc1c03afcdd908e930c988c511f",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "USAGE-GUIDE.txt",
+      "bytes": 2933,
+      "sha256": "aea3565149aba714e592ac1ccd563daef78973d9bd11120755e79641f39caea2",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "ai_agent.py",
+      "bytes": 19043,
+      "sha256": "ff87800b3fb1cde6722f31cff351f14a28190ace8b620462c5f2b4ca2ca2b785",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "ai_cache.py",
+      "bytes": 2489,
+      "sha256": "5e6548a65a96541330fd771576e1b7ab66e3d47dfa2c5df1e41ec4f4ae1768d7",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "app_info.py",
+      "bytes": 351,
+      "sha256": "a5111db25f79b12120d93081a62d43d3773f714ba0310ab3b42a1dbc6e900747",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "appearance.py",
+      "bytes": 520,
+      "sha256": "ce4271f490197e13a26ff9b60f9f0d8646a6db9cebf1910ec4a2d5f5d5622c2f",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "archives.py",
+      "bytes": 11102,
+      "sha256": "9b22b5cf79244c970941fec4dd5ea0d333478f6e38569826ca670084bb347a9c",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "category_lookup.py",
+      "bytes": 3919,
+      "sha256": "7c434cbf783bf08bdc7977f05cc2a3c107679fe6bce40e93b62ab3efe449a006",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "classification.py",
+      "bytes": 8436,
+      "sha256": "c3b103348f8055e04071e46313459d0440ae583356b0df9bbcef3878fb96eda4",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "configure-CF-key.cmd",
+      "bytes": 263,
+      "sha256": "d97a6639e66428e1823e6967a3cab71b01cbc08a1f3a6db33fc3dfc0a0bd4aa4",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "configure_platform.py",
+      "bytes": 1471,
+      "sha256": "ba8f7252625e848056d63ac0226a30f85e3b0ccaef2ef1a4dad58a794db8fea9",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "demo.json",
+      "bytes": 10317,
+      "sha256": "f633ff925d9516768b9e24d3b11740c4fca781b0a90e9c1641c49549ffe93a83",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "desktop-assets/damn.ico",
+      "bytes": 11290,
+      "sha256": "657597a1ddc7254a6cdd7801a215cb0ab5694ac6844acbba978f949880d7cf5e",
+      "licenseScope": "DAMN visual resource; no endorsement or third-party brand rights granted"
+    },
+    {
+      "path": "desktop-assets/splash.html",
+      "bytes": 3073,
+      "sha256": "ede22d741cff0a6b1a95e70413e2308e63854e9f8998ae777709568b26dbb6f0",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "desktop-assets/splash.png",
+      "bytes": 22144,
+      "sha256": "cef44897c6a5f28deb0303820ee368d5f7369eb5154793ad648698f72560b991",
+      "licenseScope": "DAMN visual resource; no endorsement or third-party brand rights granted"
+    },
+    {
+      "path": "desktop.py",
+      "bytes": 10024,
+      "sha256": "5a77b476bdd5e6f37f6ce3f9d42fe93b3e5ae8489a5315329188d4d57007cbe1",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "docs/GITHUB-FIRST-UPLOAD.md",
+      "bytes": 3195,
+      "sha256": "8dadb4b52b8fd76ec8d0265f0316290c24a2f4c4f437b7cbadf384292695c8fb",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "docs/RUNNING.md",
+      "bytes": 2153,
+      "sha256": "36bd69a35fa78651bf4ea133823de700bca857d779dd78e87c54b5397dbe69d7",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 1330,
+      "sha256": "0b486b4cc62f3c60262479b167545d224dc6628e5449f6c5d873497a182a5378",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "enrichment.py",
+      "bytes": 18757,
+      "sha256": "579fca367a14ffe951a795ad0a918af8b308405ddfd0b94f03ce583d37312f2b",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "identity.py",
+      "bytes": 38991,
+      "sha256": "04896dd415944a7c9319aaf6619ed441a2c6f4aef81d81f23d93ff2570dd5cf2",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "prerequisites.py",
+      "bytes": 57038,
+      "sha256": "0b7767e839bd091432b4b9c69dcaf38d9ff7a4e6e6693015c40915c60361812b",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "purpose.py",
+      "bytes": 1999,
+      "sha256": "3c7a6f9f32300a28baeaba5cf6e494c003930f6a58b19931ef203ee7621e73cb",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "requirements-desktop.txt",
+      "bytes": 158,
+      "sha256": "79f8c43ef997268adf08b1e9ebf02a94e0e54fe136f20452119c293a823d105d",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "research.py",
+      "bytes": 26958,
+      "sha256": "7c730f59606faf364061fadf28ed11e63e71b5ac770b165da2639c990938d230",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "scanner.py",
+      "bytes": 20051,
+      "sha256": "c5af151fcb67f62e3784b908ab3f6e00e7adf1b0a39330f00ad7f89ec6b492f0",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "server.py",
+      "bytes": 31887,
+      "sha256": "25ab0b07d0e07126f51198165c0c5cf80315660fea44b0aa64bcb5a2e4c0ad14",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "settings.py",
+      "bytes": 7383,
+      "sha256": "f071bb47f11cec6a55dd4bed5376e98066353ddb8373f525707f2c90c07dfe61",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "start-DAMN-desktop-dev.cmd",
+      "bytes": 333,
+      "sha256": "f7bd9f0224623235b4d2e57fde3b59ed81c63d647ed7f1e76720a59e6c622c9a",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "start-DAMN.cmd",
+      "bytes": 292,
+      "sha256": "2dbcd182d00565557be6282458d85887ea12228d9ed9998da5b2b9a1f0bba525",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/app.js",
+      "bytes": 73638,
+      "sha256": "bed03b2d4151bc8a5a24b97ba749e06e192fc2a1a826c98a80a202c898207d10",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/catalog.js",
+      "bytes": 16367,
+      "sha256": "90d42f263c36023efcc11d8c29dfe3f007e0d2db3eba392bc2f9800b0397eb12",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/classification.js",
+      "bytes": 4083,
+      "sha256": "346f7d81a841a8c947b2e06af10ffe9d8c8577e599de8990d68f24a3c3840a75",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/desktop-footer.css",
+      "bytes": 1780,
+      "sha256": "97451fe561233e8e6643078790d5f1fb9734cdbed5f6d465bc48444f1c8650b9",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/desktop-ui.css",
+      "bytes": 5848,
+      "sha256": "4e91f3e7a3e46b03d9363a25d21a82faedd2fb262e72eebb78c1a68bb6e256a1",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/desktop-ui.js",
+      "bytes": 4009,
+      "sha256": "56691a0fc84639ba301a8c64dfd8c4321364a11adcba7eeb826077f0356f4f12",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/empty-workspaces.css",
+      "bytes": 2907,
+      "sha256": "2df8f04077e897ceca791211db201c06d8c537eb302a451dc829c502fe410a73",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/feedback.js",
+      "bytes": 5695,
+      "sha256": "526dfe66b8a460f296b4582245b81b109be678aa3fffe201b6d9380c1635dbf2",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/home-motion.js",
+      "bytes": 6238,
+      "sha256": "0a8ced731618e04c977450f7ac70aafd80201cf740be3f744aa14a96709c1181",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/identity.css",
+      "bytes": 10607,
+      "sha256": "7f2ddaa0477e67d095f2ed8238b2643aadb900739d76ef2cb302f513655fa72d",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/identity.js",
+      "bytes": 32155,
+      "sha256": "a91c038bb08ba3907ad81c56cc8894c23a38bfddf284603bbffcaf1508bd50f5",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/index.html",
+      "bytes": 46411,
+      "sha256": "8b80f80fd1613b56c44873397a687c98c5c3894d0a9c0c10ea03aa7acc1dc44b",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/interface.css",
+      "bytes": 68378,
+      "sha256": "6cfc92fee3267c248a48fa4e1b1de64ee7297356be8eb715591f81b71fac0c03",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/interface.js",
+      "bytes": 3078,
+      "sha256": "877b8ac84bb926d24d24c5c281c0b6f97cb4186594a5821c402e70fb3c083763",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/legacy-workbench.css",
+      "bytes": 49568,
+      "sha256": "d2b0fa5911a021f221f9bca49a55f66200c619fe712813bb6147f94e8ff149d5",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/motion.js",
+      "bytes": 64151,
+      "sha256": "6032a8ca9e9a1355bc48452c3014e03dcf0523fc5a9f229fe84fb1c89add539c",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/native-controls.css",
+      "bytes": 3574,
+      "sha256": "04c7cdf3844420099a51f4c9182bbb85b10ecb4ff2e5f6ba5ed81619fb60918c",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/network.js",
+      "bytes": 13028,
+      "sha256": "d78abcfe57c7ddf9e9805df9df1ee46163031532e3eb0c033ea3f351e09fb36d",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/onboarding.css",
+      "bytes": 5767,
+      "sha256": "cead5a1fe9cb8fe52ee6228782ef786ec9859c867fdb3cabbed3fab2530481ce",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/onboarding.js",
+      "bytes": 6999,
+      "sha256": "53f8956042717a1941abb6c4bd1eb7f64a34997d38a36fb4c9c2c6b9bfe4bc67",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/progress.js",
+      "bytes": 3559,
+      "sha256": "1280de077dd46f8638ca45a6c5a7ffc65dda9ea8207913ca3ee99f9631c48a76",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/public-appearance.css",
+      "bytes": 509,
+      "sha256": "f6131a8e25297cec1876f68e59c52ea0fe9e4de23d3344ce9974ad6d25102164",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/settings-categories.css",
+      "bytes": 4683,
+      "sha256": "8363a3a2d441d2cdae5b7fcebb91542985b7e8380fd58db2ea7b7a8f823dae72",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/settings-categories.js",
+      "bytes": 3711,
+      "sha256": "95bfe270c5a47428629ef76a5c7428df100823309e71467915f82ecdeda387e7",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/start.js",
+      "bytes": 4784,
+      "sha256": "24f5ba8f31bbc36c78ef01be9fa18d3b48f7a4e0d89b5890073331cd4766ebe6",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/style.css",
+      "bytes": 61840,
+      "sha256": "1db94c413af3dd8587e5fcdf59c58665266698c8ff1080e821f558c2b3f51928",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/suite-cards.css",
+      "bytes": 2258,
+      "sha256": "6b020457c74f31d6b80106822a461855c3a914697c07b69e4163d372664cf594",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/suite-cards.js",
+      "bytes": 8714,
+      "sha256": "cad6babbaf1efb134f9a86eea1373dee4703415f5205e334f4d7cb5caafcdb44",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/suite-controls.css",
+      "bytes": 10464,
+      "sha256": "5246a9e4bf7b53e831ced35edab4a5ae8b26904cf7b7691fd6b6ffceefe03a6c",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/suite-ui.js",
+      "bytes": 13918,
+      "sha256": "12168e5adc568885b670536ac2c9d893fd97e4a7c560c21d8f90e135421019e8",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/suite.css",
+      "bytes": 26487,
+      "sha256": "22dc37bb1c6474ce8dc23d89e165cae68c95dd066be60eabf7136493f70dfd5d",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/tooltips.css",
+      "bytes": 1394,
+      "sha256": "fb2580f3905c84734631d8de8f796b86bff0bf614608205ebc52d7250b1c9a54",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/tooltips.js",
+      "bytes": 10162,
+      "sha256": "d6cde659e0e748aad0cd262d3ad554de7f3e768d91a01ac0c2a196faf3a819b4",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/updates.css",
+      "bytes": 4599,
+      "sha256": "9944d673c8dae7ac749f9f8290744a949b21e5a54b6db666d30280d59ec2f708",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/updates.js",
+      "bytes": 4366,
+      "sha256": "e3cd9b01c35d0e9214e3a08345ddf333cf0e9532420cafc77d6c9b871e225e36",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/workbench.css",
+      "bytes": 297800,
+      "sha256": "0e04daa4d88e1c3c73d2fc12b988e279cb899511bb1fe72f107ce9be4775dcbb",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/workspaces.css",
+      "bytes": 36852,
+      "sha256": "e2cafd2c0df365548b57383fb27b6d7b515aecb3919eafc330738561a44e6e30",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "static/workspaces.js",
+      "bytes": 18357,
+      "sha256": "0ac82da1f2d063a8c947d20a0a99b7e4e737a1ebfa3430830c0aa54810115035",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "taxonomy.json",
+      "bytes": 16456,
+      "sha256": "3dded97ba8bfbb1ae3fcb76d06546c77dd8259b1cadff701cef48f741f8f65cf",
+      "licenseScope": "DAMN rules and translations conditional; platform facts and upstream terms separately; see THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "taxonomy.py",
+      "bytes": 12807,
+      "sha256": "0e5d00b5584db43ff0075d0adde663e034b700f5cd01bd360f5d82bfb36c65ed",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_ai_agent.py",
+      "bytes": 7564,
+      "sha256": "a6ca550ca78060b4b36c66f79c8f7da6effb6190b57ec47b49e0b9a472ca5e83",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_app_info.py",
+      "bytes": 2125,
+      "sha256": "f599a05d2141a2d5fe58708a3c18c2b83731d24fd427c657f843d79ea5679382",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_archives.py",
+      "bytes": 4942,
+      "sha256": "1ac63387c242c3bdf7eda6c9b48dbb2a6da24a5a423681ad54535bc47995a59a",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_catalog.py",
+      "bytes": 1137,
+      "sha256": "45d4bb1afe2312e5f57995d2d94374c259760612a1dffdeff7801c199bdb057e",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_category_hierarchy.cjs",
+      "bytes": 8795,
+      "sha256": "a627931e0da586ebb2bc6cf2b8e494f7006626c75c0c7672dfe6e4e8dd8d8020",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_check_summary.cjs",
+      "bytes": 1082,
+      "sha256": "9643242b17b328e32fb78c50fcfe29cb4685c473a93e259a79ac9a1bc3d1911f",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_classification.py",
+      "bytes": 4747,
+      "sha256": "7e10dbb8ec1358cbbc2fa2b4abe9e7ad6b1fe4122573e8a772f9daac028068b6",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_classification_ui.cjs",
+      "bytes": 2138,
+      "sha256": "adcf6eb6d084027f396b4c2dedf03990ecc94e543483eb8cb71d847427bf400a",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_configure_platform.py",
+      "bytes": 1410,
+      "sha256": "5e02ff638e3dea9ae5f931ad6868a5a0747808127d3d667b2d6c8c58f86d643c",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_create_relations.cjs",
+      "bytes": 5316,
+      "sha256": "0e6c0fb2982e2fd4cb9df986dc5c191f1cb737102175517012ea52ccc4e0d517",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_damn.py",
+      "bytes": 7634,
+      "sha256": "5a709320601fa39f9570cf9a30f53278fb8b46cb15d632d9eee23ec960828fe4",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_dependency_detail.cjs",
+      "bytes": 6866,
+      "sha256": "b1370be7dbf6fcd9ff6a882c6a10581098611bdda1903b78d4e5631460898bab",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_desktop.py",
+      "bytes": 3784,
+      "sha256": "7e651b10ca6f4f53064e990f386ac2fc8fbe1199c58362999b69acac300c93a3",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_enrichment.py",
+      "bytes": 6729,
+      "sha256": "7a8c29c38ab06dacbcf4888f6a88c2ab18e1566e1415ad66db2fe8f8432e683b",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_enrichment_ui.cjs",
+      "bytes": 5756,
+      "sha256": "0c51ba4d079e9aa40f94117f07f2cddb530852863c100657ea5e25f0c2f54b66",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_http_rejection.py",
+      "bytes": 5715,
+      "sha256": "8e58dd824fc6e13fc79a05dde5ac89a33b8496a2f8c7987e667e76efa3dede3f",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_identity.py",
+      "bytes": 35931,
+      "sha256": "2f8b6da5667a2fa4ce3ab5462e794ce8720d8d4a6a476b2c42d580b52125e36e",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_identity_http.py",
+      "bytes": 9887,
+      "sha256": "759004be21e74e4f3eb9a3eb019dce27c69de84e8c525d6557abeddd481e57c2",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_identity_scan.py",
+      "bytes": 2726,
+      "sha256": "5d86b90624954d18d167f717d50a0cbc24103c995328b9796b295f03480a4acb",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_identity_ui.cjs",
+      "bytes": 21381,
+      "sha256": "4016b2fc431cbacff0436fb30d21f82b237f69a63c4c2ab180263b41283dee3a",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_interface.cjs",
+      "bytes": 11474,
+      "sha256": "6f4ddc71b7f9e1ee3cf265d94d48291cf8163c9669bf40e1ca58fcdd3445051e",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_mirror_search.py",
+      "bytes": 3399,
+      "sha256": "85b6c41f87876d2349d842f79e638cc4e00d45688b70d1b5b21e7e250c3a15d9",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_network.cjs",
+      "bytes": 3854,
+      "sha256": "6f17861d37c67e2a1b2b6a6863d259b7fb82249c4398f90951557660ac451c83",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_network_browse.cjs",
+      "bytes": 12070,
+      "sha256": "7013edcfb512c5f1ab6d1681afed81c92f0144996ced259765e152dfd270ce82",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_network_chain.cjs",
+      "bytes": 5963,
+      "sha256": "8294ed0d78c2b64fb083a37720e8fc3c0d41adec5972fed9573e744f83b49fd8",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_onboarding.cjs",
+      "bytes": 9431,
+      "sha256": "551cfc33f8bace07aec3b4783f06f5c683586928a881aa5328a5927a5ac06b24",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_platform_categories.py",
+      "bytes": 6020,
+      "sha256": "977d6e1ff4bee482b5965efc65c690ae4cd823aa689b1adf790f46fc901b3284",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_platform_dependencies.py",
+      "bytes": 5920,
+      "sha256": "3566ab67216859b7394dd05e55516f8012a1711e30180b27e6068cc1dcb6ff64",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_prerequisite_http.py",
+      "bytes": 3691,
+      "sha256": "a69e48564f1a13f8120cb2aeabe13d518d32a69fd285d99d66a8fadcff043c94",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_prerequisites.py",
+      "bytes": 37031,
+      "sha256": "bf85aff61edc6f055836f5fdf568bae5b9ace953d99d671bfa7599f28fd27109",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_progress.cjs",
+      "bytes": 3426,
+      "sha256": "e35e78bf2a6303b53a68f738ba4825d9251759acbcc4bc7d029a0d93e04ef207",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_progress.py",
+      "bytes": 8287,
+      "sha256": "8ffa13d30fbe71a12e72a52de10909207388c143429877b4e1e882946d7c6914",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_public_backend.py",
+      "bytes": 5182,
+      "sha256": "26cef1f08217dfa78100aeaae1acf1006f55bb9f8463f9b5d1abd689b6bbb2f4",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_public_frontend.cjs",
+      "bytes": 5659,
+      "sha256": "662a2031b108e5d6031ab963754746469260a52ee0cee6b38469d41900d8011f",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_purpose.py",
+      "bytes": 3139,
+      "sha256": "b20cecc40c4603007a7d0a4895725d6e82778eb9ac698f066a4859af8e554df1",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_request_throttle.py",
+      "bytes": 2595,
+      "sha256": "0ab688d8eab70a1816f00c615a16fbfe286a7ae993b219105c41173aaa7b0ec9",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_research.py",
+      "bytes": 4729,
+      "sha256": "df28646a2d36853e823ae22e347d651ff9447b6d18673b97958d30c5ab781a21",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_scanner_identity_metadata.py",
+      "bytes": 7854,
+      "sha256": "8f3f68a0e6b70499d491f16047f993c7397139336807a6fd3a596de948d2f994",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_settings.py",
+      "bytes": 12822,
+      "sha256": "e3ebd7d8458956f0f1aa68c1f8ad12fa95e248d2e64bc57b8791462a114091a5",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_settings_categories.cjs",
+      "bytes": 8417,
+      "sha256": "f83d2f7cfb8446fe9bb2bdd9b74aca6c4d9b58f138d657e0d2166126a747372d",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_speed.py",
+      "bytes": 8713,
+      "sha256": "7f92f1fd68248956477cf869606cbb9f10d92fc6b36e755399775f9a03b3cfe7",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_start.cjs",
+      "bytes": 10791,
+      "sha256": "1874099295acd010270a770c6e1d1d07ac71d35e11bf3ded955ea44f76f88c71",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_suite_controls.cjs",
+      "bytes": 12655,
+      "sha256": "d36df695b3e6fc7ca88a550ed06c1327ec4c8bfb92a3ec9e078fca787f6da61f",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_taxonomy.py",
+      "bytes": 5176,
+      "sha256": "985038f9cc395292a33b49a70856960284096bc721971df09cd31fb83c62fe32",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_taxonomy_cases.json",
+      "bytes": 4939,
+      "sha256": "6d623c439d575f290002e03452ee9b70b30371b02bca447aabb1370cf717b93c",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "test_updates.py",
+      "bytes": 11975,
+      "sha256": "b220bea16655633ed27959e6f909cdb8bc9bb9c40cb6e90da02acf8555fe403a",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "test_workspaces_ui.cjs",
+      "bytes": 21431,
+      "sha256": "df7da9dbfbb725f4b29da775f748d35c5d57014a38f1618079c60b84ff4c6183",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "tools/assemble.mjs",
+      "bytes": 2282,
+      "sha256": "abf25ebbdb06b030061cc5bebc15319cc0e15d86c441a887a91f8cc4f3aacb94",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "tools/check-frontend.mjs",
+      "bytes": 577,
+      "sha256": "8653f354c9c0483ab2b7b2fb05a5b7a4e6581b9c55339f106c75a902100348aa",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    },
+    {
+      "path": "updates.py",
+      "bytes": 4279,
+      "sha256": "ed586da8f6772c5b39446844569bbd23b05b0f75f6a178d30e9594d294872486",
+      "licenseScope": "DAMN-Source-Noncommercial-1.0 only to extent licensor holds relevant rights"
+    }
+  ]
+}

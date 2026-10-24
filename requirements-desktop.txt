@@ -1,0 +1,3 @@
+# Browser mode uses only Python 3.11+ standard library.
+# Optional Windows desktop host; install Microsoft Edge WebView2 Runtime separately.
+pywebview==6.2.1

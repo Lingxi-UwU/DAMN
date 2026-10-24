@@ -1,0 +1,11 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=fs.readFileSync('./static/app.js','utf8'),begin=source.indexOf('function checkSummary(data){'),end=source.indexOf('function loadReport(data){',begin),ctx={};
+vm.createContext(ctx);vm.runInContext(source.slice(begin,end),ctx);
+const report={issues:Array.from({length:27},()=>({level:'warning'})),errors:[{message:'Skipped file'}],unchecked:0};
+let summary=ctx.checkSummary(report);
+assert.equal(summary.total,28);assert.equal(summary.details,'27 项检查提示 · 1 项读取提示');assert.equal(summary.coverage,'版本范围待核对：0 项');
+summary=ctx.checkSummary({issues:[],errors:[],unchecked:3});
+assert.equal(summary.total,0);assert.equal(summary.coverage,'版本范围待核对：3 项');
+summary=ctx.checkSummary({});assert.equal(summary.total,0);
+assert(source.includes("$('#issue-badge').textContent=checks.total"));
+console.log('Check summary passed: findings and read notices share the visible list count; undecidable version ranges remain a separate metric.');

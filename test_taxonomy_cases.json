@@ -1,0 +1,202 @@
+[
+  {
+    "key": "case0",
+    "name": "Example 01",
+    "file": "example_0.jar",
+    "description": "提供可探索的地区和任务剧情。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "冒险探索"
+  },
+  {
+    "key": "case1",
+    "name": "Example 02",
+    "file": "example_1.jar",
+    "description": "加入恶搞和整蛊效果。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "怪趣"
+  },
+  {
+    "key": "case2",
+    "name": "Example 03",
+    "file": "example_2.jar",
+    "description": "提供用于装饰的家具。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "建筑装饰"
+  },
+  {
+    "key": "case3",
+    "name": "Example 04",
+    "file": "example_3.jar",
+    "description": "加入货币与交易系统。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "经济"
+  },
+  {
+    "key": "case4",
+    "name": "Example 05",
+    "file": "example_4.jar",
+    "description": "加入武器、防具和工具。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "装备工具"
+  },
+  {
+    "key": "case5",
+    "name": "Example 06",
+    "file": "example_5.jar",
+    "description": "加入食物和烹饪食谱。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "饮食"
+  },
+  {
+    "key": "case6",
+    "name": "Example 07",
+    "file": "example_6.jar",
+    "description": "调整玩法机制和游戏规则。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "玩法机制"
+  },
+  {
+    "key": "case7",
+    "name": "Example 08",
+    "file": "example_7.jar",
+    "description": "提供开发框架和开发接口 API。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "开发库"
+  },
+  {
+    "key": "case8",
+    "name": "Example 09",
+    "file": "example_8.jar",
+    "description": "加入法术、仪式和炼金系统。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "魔法"
+  },
+  {
+    "key": "case9",
+    "name": "Example 10",
+    "file": "example_9.jar",
+    "description": "提供服务器权限管理。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "管理"
+  },
+  {
+    "key": "case10",
+    "name": "Example 11",
+    "file": "example_10.jar",
+    "description": "提供可游玩的小游戏。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "迷你游戏"
+  },
+  {
+    "key": "case11",
+    "name": "Example 12",
+    "file": "example_11.jar",
+    "description": "加入新的动物和宠物。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "生物"
+  },
+  {
+    "key": "case12",
+    "name": "Example 13",
+    "file": "example_12.jar",
+    "description": "改善运行性能，提供内存优化。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "性能优化"
+  },
+  {
+    "key": "case13",
+    "name": "Example 14",
+    "file": "example_13.jar",
+    "description": "提供玩家聊天和交流互动。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "社交"
+  },
+  {
+    "key": "case14",
+    "name": "Example 15",
+    "file": "example_14.jar",
+    "description": "加入存储容器和物品整理功能。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "存储"
+  },
+  {
+    "key": "case15",
+    "name": "Example 16",
+    "file": "example_15.jar",
+    "description": "加入机器、能源与自动化加工。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "科技"
+  },
+  {
+    "key": "case16",
+    "name": "Example 17",
+    "file": "example_16.jar",
+    "description": "加入交通载具和铁路。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "交通"
+  },
+  {
+    "key": "case17",
+    "name": "Example 18",
+    "file": "example_17.jar",
+    "description": "改善便捷操作和便利功能。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "实用工具"
+  },
+  {
+    "key": "case18",
+    "name": "Example 19",
+    "file": "example_18.jar",
+    "description": "增加地形、群系和自然结构。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "世界生成"
+  },
+  {
+    "key": "case19",
+    "name": "Example 20",
+    "file": "example_19.jar",
+    "description": "仅有下载清单，尚未读取实际 JAR。",
+    "components": [],
+    "dependencies": [],
+    "enabled": true,
+    "expectedCategory": "其他 / 待识别"
+  }
+]

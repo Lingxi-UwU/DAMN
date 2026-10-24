@@ -1,0 +1,646 @@
+{
+  "version": 3,
+  "checkedAt": "2026-10-25",
+  "sources": [
+    {
+      "site": "Modrinth",
+      "url": "https://api.modrinth.com/v2/tag/category",
+      "documentation": "https://docs.modrinth.com/api/operations/categorylist/",
+      "method": "直接读取官方 API，仅保留 project_type=mod 的分类名称；不复制图标。",
+      "retrievedAtUTC": "2026-10-24T20:11:48.868Z",
+      "projectType": "mod",
+      "officialSnapshot": [
+        {
+          "name": "adventure",
+          "header": "categories"
+        },
+        {
+          "name": "cursed",
+          "header": "categories"
+        },
+        {
+          "name": "decoration",
+          "header": "categories"
+        },
+        {
+          "name": "economy",
+          "header": "categories"
+        },
+        {
+          "name": "equipment",
+          "header": "categories"
+        },
+        {
+          "name": "food",
+          "header": "categories"
+        },
+        {
+          "name": "game-mechanics",
+          "header": "categories"
+        },
+        {
+          "name": "library",
+          "header": "categories"
+        },
+        {
+          "name": "magic",
+          "header": "categories"
+        },
+        {
+          "name": "management",
+          "header": "categories"
+        },
+        {
+          "name": "minigame",
+          "header": "categories"
+        },
+        {
+          "name": "mobs",
+          "header": "categories"
+        },
+        {
+          "name": "optimization",
+          "header": "categories"
+        },
+        {
+          "name": "social",
+          "header": "categories"
+        },
+        {
+          "name": "storage",
+          "header": "categories"
+        },
+        {
+          "name": "technology",
+          "header": "categories"
+        },
+        {
+          "name": "transportation",
+          "header": "categories"
+        },
+        {
+          "name": "utility",
+          "header": "categories"
+        },
+        {
+          "name": "worldgen",
+          "header": "categories"
+        }
+      ],
+      "snapshotSha256": "0e7bc58d2d9cd57adcaf0d5bb395ac19c6dbdc66bbae355907681b7436cd0ffa"
+    }
+  ],
+  "legacy": {
+    "世界与探索": "世界生成",
+    "世界生成与探索": "世界生成",
+    "科技与自动化": "科技"
+  },
+  "tagAliases": {},
+  "categories": [
+    {
+      "label": "冒险探索",
+      "group": "冒险探索",
+      "description": "探索地点、任务挑战和角色成长。",
+      "platform": [
+        "adventure"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:adventure|exploration|rpg|quest)\\b|冒险|探索|任务|角色成长"
+        ]
+      ],
+      "features": [
+        {
+          "label": "探索",
+          "pattern": "\\bexplor(?:e|ation)\\b|探索"
+        },
+        {
+          "label": "任务",
+          "pattern": "\\bquests?\\b|任务"
+        }
+      ],
+      "sourceCategory": "adventure"
+    },
+    {
+      "label": "怪趣",
+      "group": "怪趣",
+      "description": "以反常效果、恶搞或出人意料的变化为特点。",
+      "platform": [
+        "cursed"
+      ],
+      "rules": [
+        [
+          5,
+          "\\bcursed\\b|恶搞|整蛊|怪趣"
+        ]
+      ],
+      "features": [
+        {
+          "label": "整蛊效果",
+          "pattern": "\\bcursed\\b|恶搞|整蛊"
+        }
+      ],
+      "sourceCategory": "cursed"
+    },
+    {
+      "label": "建筑装饰",
+      "group": "建筑装饰",
+      "description": "用于建筑外观、家具和装饰物。",
+      "platform": [
+        "decoration"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:decoration|decorative|furniture)\\b|装饰|家具|建筑外观"
+        ]
+      ],
+      "features": [
+        {
+          "label": "家具",
+          "pattern": "\\bfurniture\\b|家具"
+        },
+        {
+          "label": "建筑外观",
+          "pattern": "\\bdecorative\\b|建筑外观|装饰方块"
+        }
+      ],
+      "sourceCategory": "decoration"
+    },
+    {
+      "label": "经济",
+      "group": "经济",
+      "description": "游戏内的货币、交易和经济规则。",
+      "platform": [
+        "economy"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:economy|currency|currencies|trading)\\b|货币|经济系统|交易系统"
+        ]
+      ],
+      "features": [
+        {
+          "label": "货币",
+          "pattern": "\\bcurrenc(?:y|ies)\\b|货币"
+        },
+        {
+          "label": "交易",
+          "pattern": "\\btrad(?:e|ing)\\b|交易"
+        }
+      ],
+      "sourceCategory": "economy"
+    },
+    {
+      "label": "装备工具",
+      "group": "装备工具",
+      "description": "角色使用的工具、武器和防具。",
+      "platform": [
+        "equipment"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:equipment|weapons?|armou?r|tools?)\\b|装备|武器|防具|工具"
+        ]
+      ],
+      "features": [
+        {
+          "label": "武器",
+          "pattern": "\\bweapons?\\b|武器"
+        },
+        {
+          "label": "防具",
+          "pattern": "\\barmou?r\\b|防具|护甲"
+        },
+        {
+          "label": "工具",
+          "pattern": "\\btools?\\b|工具"
+        }
+      ],
+      "sourceCategory": "equipment"
+    },
+    {
+      "label": "饮食",
+      "group": "饮食",
+      "description": "食材、食物制作和饮食活动。",
+      "platform": [
+        "food"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:food|cooking|crops?|farming|brewing)\\b|食物|烹饪|食材|农作物|酿造"
+        ]
+      ],
+      "features": [
+        {
+          "label": "种植",
+          "pattern": "\\b(?:crops?|farming)\\b|种植|农作物"
+        },
+        {
+          "label": "烹饪",
+          "pattern": "\\bcooking\\b|烹饪|食谱"
+        },
+        {
+          "label": "酿造",
+          "pattern": "\\bbrewing\\b|酿造"
+        }
+      ],
+      "sourceCategory": "food"
+    },
+    {
+      "label": "玩法机制",
+      "group": "玩法机制",
+      "description": "调整游戏规则、行为方式和进程。",
+      "platform": [
+        "game-mechanics"
+      ],
+      "rules": [
+        [
+          5,
+          "\\bgame[ -]mechanics\\b|玩法机制|游戏规则|机制调整"
+        ]
+      ],
+      "features": [
+        {
+          "label": "游戏规则",
+          "pattern": "\\bgame[ -]rules?\\b|游戏规则"
+        },
+        {
+          "label": "难度",
+          "pattern": "\\bdifficulty\\b|难度调整"
+        }
+      ],
+      "sourceCategory": "game-mechanics"
+    },
+    {
+      "label": "开发库",
+      "group": "开发库",
+      "description": "供其他模组或开发者使用的接口和基础组件。",
+      "platform": [
+        "library"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:library|libraries|framework|api)\\b|开发库|支持库|开发框架|接口库"
+        ]
+      ],
+      "features": [
+        {
+          "label": "开发接口",
+          "pattern": "\\bapi\\b|开发接口"
+        },
+        {
+          "label": "基础组件",
+          "pattern": "\\b(?:library|framework)\\b|基础组件|开发框架"
+        }
+      ],
+      "sourceCategory": "library"
+    },
+    {
+      "label": "魔法",
+      "group": "魔法",
+      "description": "法术、魔力和仪式等魔法玩法。",
+      "platform": [
+        "magic"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:magic|spells?|mana|rituals?|alchemy)\\b|魔法|法术|魔力|仪式|炼金"
+        ]
+      ],
+      "features": [
+        {
+          "label": "法术",
+          "pattern": "\\bspells?\\b|法术"
+        },
+        {
+          "label": "仪式",
+          "pattern": "\\brituals?\\b|仪式"
+        },
+        {
+          "label": "炼金",
+          "pattern": "\\balchemy\\b|炼金"
+        }
+      ],
+      "sourceCategory": "magic"
+    },
+    {
+      "label": "管理",
+      "group": "管理",
+      "description": "管理游戏环境、权限或服务端活动。",
+      "platform": [
+        "management"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:management|administration|permissions?)\\b|权限管理|服务端管理|管理工具"
+        ]
+      ],
+      "features": [
+        {
+          "label": "权限",
+          "pattern": "\\bpermissions?\\b|权限"
+        },
+        {
+          "label": "管理工具",
+          "pattern": "\\b(?:management|administration)\\b|管理工具"
+        }
+      ],
+      "sourceCategory": "management"
+    },
+    {
+      "label": "迷你游戏",
+      "group": "迷你游戏",
+      "description": "在游戏中加入独立的小型游戏活动。",
+      "platform": [
+        "minigame"
+      ],
+      "rules": [
+        [
+          5,
+          "\\bmini[ -]?games?\\b|迷你游戏|小游戏"
+        ]
+      ],
+      "features": [
+        {
+          "label": "小游戏",
+          "pattern": "\\bmini[ -]?games?\\b|小游戏"
+        }
+      ],
+      "sourceCategory": "minigame"
+    },
+    {
+      "label": "生物",
+      "group": "生物",
+      "description": "新增或改变游戏中的生物。",
+      "platform": [
+        "mobs"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:mobs?|creatures?|animals?|monsters?|pets?)\\b|生物|动物|怪物|宠物"
+        ]
+      ],
+      "features": [
+        {
+          "label": "动物",
+          "pattern": "\\banimals?\\b|动物"
+        },
+        {
+          "label": "怪物",
+          "pattern": "\\bmonsters?\\b|怪物"
+        },
+        {
+          "label": "宠物",
+          "pattern": "\\bpets?\\b|宠物"
+        }
+      ],
+      "sourceCategory": "mobs"
+    },
+    {
+      "label": "性能优化",
+      "group": "性能优化",
+      "description": "改善运行性能、内存使用或加载速度。",
+      "platform": [
+        "optimization"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:optimization|optimisation|performance|memory)\\b|性能优化|帧率|内存优化|加载加速"
+        ]
+      ],
+      "features": [
+        {
+          "label": "运行性能",
+          "pattern": "\\bperformance\\b|帧率|运行性能"
+        },
+        {
+          "label": "内存",
+          "pattern": "\\bmemory\\b|内存"
+        },
+        {
+          "label": "加载速度",
+          "pattern": "\\bloading\\b|加载加速|加载速度"
+        }
+      ],
+      "sourceCategory": "optimization"
+    },
+    {
+      "label": "社交",
+      "group": "社交",
+      "description": "玩家交流、聊天和社交互动。",
+      "platform": [
+        "social"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:social|chat|communication|emotes?)\\b|社交|聊天|玩家交流|表情动作"
+        ]
+      ],
+      "features": [
+        {
+          "label": "聊天",
+          "pattern": "\\bchat\\b|聊天"
+        },
+        {
+          "label": "交流互动",
+          "pattern": "\\b(?:social|communication|emotes?)\\b|社交|玩家交流|表情动作"
+        }
+      ],
+      "sourceCategory": "social"
+    },
+    {
+      "label": "存储",
+      "group": "存储",
+      "description": "保存、整理和取用物品或其他游戏资源。",
+      "platform": [
+        "storage"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:storage|inventory|containers?|sorting)\\b|存储|仓储|背包|物品整理"
+        ]
+      ],
+      "features": [
+        {
+          "label": "容器",
+          "pattern": "\\bcontainers?\\b|容器"
+        },
+        {
+          "label": "物品整理",
+          "pattern": "\\b(?:inventory|sorting)\\b|背包|物品整理"
+        }
+      ],
+      "sourceCategory": "storage"
+    },
+    {
+      "label": "科技",
+      "group": "科技",
+      "description": "机器、能源和自动处理等技术玩法。",
+      "platform": [
+        "technology"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:technology|technological|industrial|machines?|automation|energy)\\b|科技|机器|工业|自动化|能源"
+        ]
+      ],
+      "features": [
+        {
+          "label": "机器",
+          "pattern": "\\bmachines?\\b|机器"
+        },
+        {
+          "label": "能源",
+          "pattern": "\\benergy\\b|能源"
+        },
+        {
+          "label": "自动处理",
+          "pattern": "\\bautomation\\b|自动化|自动处理"
+        }
+      ],
+      "sourceCategory": "technology"
+    },
+    {
+      "label": "交通",
+      "group": "交通",
+      "description": "玩家或载具在地点之间的移动。",
+      "platform": [
+        "transportation"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:transportation|vehicles?|railways?|trains?|aircraft)\\b|交通|载具|铁路|列车|飞行器"
+        ]
+      ],
+      "features": [
+        {
+          "label": "载具",
+          "pattern": "\\bvehicles?\\b|载具"
+        },
+        {
+          "label": "铁路",
+          "pattern": "\\b(?:railways?|trains?)\\b|铁路|列车"
+        },
+        {
+          "label": "飞行器",
+          "pattern": "\\baircraft\\b|飞行器"
+        }
+      ],
+      "sourceCategory": "transportation"
+    },
+    {
+      "label": "实用工具",
+      "group": "实用工具",
+      "description": "辅助常见操作和信息获取的实用功能。",
+      "platform": [
+        "utility"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:utility|utilities|quality[ -]of[ -]life|convenience)\\b|实用工具|便捷操作|便利功能"
+        ]
+      ],
+      "features": [
+        {
+          "label": "便捷操作",
+          "pattern": "\\b(?:convenience|quality[ -]of[ -]life)\\b|便捷操作|便利功能"
+        },
+        {
+          "label": "信息辅助",
+          "pattern": "\\b(?:hud|tooltip|information)\\b|信息显示|提示信息"
+        }
+      ],
+      "sourceCategory": "utility"
+    },
+    {
+      "label": "世界生成",
+      "group": "世界生成",
+      "description": "生成或调整地形、群系、维度和自然结构。",
+      "platform": [
+        "worldgen"
+      ],
+      "rules": [
+        [
+          5,
+          "\\b(?:worldgen|world[ -]generation|terrain|biomes?|dimensions?|structures?|ores?)\\b|世界生成|地形|群系|维度|自然结构|矿物"
+        ]
+      ],
+      "features": [
+        {
+          "label": "地形",
+          "pattern": "\\bterrain\\b|地形"
+        },
+        {
+          "label": "群系",
+          "pattern": "\\bbiomes?\\b|群系"
+        },
+        {
+          "label": "维度",
+          "pattern": "\\bdimensions?\\b|维度"
+        },
+        {
+          "label": "自然结构",
+          "pattern": "\\bstructures?\\b|自然结构"
+        }
+      ],
+      "sourceCategory": "worldgen"
+    },
+    {
+      "label": "其他 / 待识别",
+      "group": "其他 / 待识别",
+      "description": "平台未提供可映射类别，且现有资料不足以判断。",
+      "platform": [],
+      "rules": [],
+      "features": []
+    }
+  ],
+  "layout": "flat-official-modrinth-facets",
+  "reference": "本公开版完整替换原应用的分类表：按本文件记录的 Modrinth 官方快照独立建立扁平类别，中文名称、说明与本地关键词规则为本公开版重新编写。",
+  "provenance": {
+    "replacesOriginalFullTaxonomy": true,
+    "retainsOriginalHierarchy": false,
+    "retainsOriginalCurseForgeIdDictionary": false,
+    "includesUpstreamIcons": false,
+    "categoryOrder": "official endpoint response order",
+    "chineseLabels": "ordinary translations authored for this public candidate; not an official Modrinth translation",
+    "localRules": "new descriptive keyword fallback rules authored for this public candidate; platform categories remain preferred"
+  },
+  "platformIds": {},
+  "platformAliases": {
+    "adventure": "冒险探索",
+    "cursed": "怪趣",
+    "decoration": "建筑装饰",
+    "economy": "经济",
+    "equipment": "装备工具",
+    "food": "饮食",
+    "game-mechanics": "玩法机制",
+    "library": "开发库",
+    "magic": "魔法",
+    "management": "管理",
+    "minigame": "迷你游戏",
+    "mobs": "生物",
+    "optimization": "性能优化",
+    "social": "社交",
+    "storage": "存储",
+    "technology": "科技",
+    "transportation": "交通",
+    "utility": "实用工具",
+    "worldgen": "世界生成"
+  },
+  "classificationRevision": 2
+}

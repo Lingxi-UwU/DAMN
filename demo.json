@@ -1,0 +1,346 @@
+{
+  "schema": 1,
+  "app": "DAMN",
+  "version": "0.5.6",
+  "mode": "snapshot",
+  "pack": "Public Synthetic Demo",
+  "root": "synthetic://public-demo",
+  "created": "2026-10-24T20:09:14.204201+00:00",
+  "side": "client",
+  "environment": {
+    "minecraft": "1.21.1",
+    "fabricloader": "0.16.10"
+  },
+  "mods": [
+    {
+      "key": "m0",
+      "file": "example_food.jar",
+      "name": "Example Food",
+      "version": "1.0.0",
+      "description": "Synthetic food and cooking recipes.",
+      "category": "饮食",
+      "categoryEvidence": "本地用途规则 · 分类方案 v3",
+      "enabled": true,
+      "loader": "Fabric",
+      "loaders": [
+        "Fabric"
+      ],
+      "components": [
+        {
+          "id": "example_food",
+          "name": "Example Food",
+          "version": "1.0.0",
+          "description": "Synthetic food and cooking recipes.",
+          "source": "example_food.jar!fabric.mod.json",
+          "nested": false,
+          "environment": "*",
+          "aliases": [],
+          "authors": [
+            "Public demo fixture"
+          ],
+          "projectUrls": []
+        }
+      ],
+      "dependencies": [],
+      "bytes": 361,
+      "sha256": "dcc136903a2285d2aabb27b7251aaa8dd870631f9a9acaefaef1917b7e05234e",
+      "sha1": "93da96522c0e4fb80ebe1257c393a2490f1d4fd5",
+      "cfFingerprint": 1523320191,
+      "cfFingerprintNote": "",
+      "sources": [
+        "example_food.jar!fabric.mod.json"
+      ],
+      "tags": [
+        "烹饪"
+      ],
+      "categoryTaxonomyVersion": 3,
+      "active": true
+    },
+    {
+      "key": "m1",
+      "file": "example_library.jar",
+      "name": "Example Library",
+      "version": "1.0.0",
+      "description": "A reusable code library for the synthetic examples.",
+      "category": "开发库",
+      "categoryEvidence": "本地用途规则 · 分类方案 v3",
+      "enabled": true,
+      "loader": "Fabric",
+      "loaders": [
+        "Fabric"
+      ],
+      "components": [
+        {
+          "id": "example_library",
+          "name": "Example Library",
+          "version": "1.0.0",
+          "description": "A reusable code library for the synthetic examples.",
+          "source": "example_library.jar!fabric.mod.json",
+          "nested": false,
+          "environment": "*",
+          "aliases": [],
+          "authors": [
+            "Public demo fixture"
+          ],
+          "projectUrls": []
+        }
+      ],
+      "dependencies": [],
+      "bytes": 383,
+      "sha256": "ffe88c7d38c4238b124d92afb50d8467b6dc02bf3143b09d8c23302742a8b77c",
+      "sha1": "f9305217613864c8b3abbd6f9f6521a0729d237b",
+      "cfFingerprint": 1019947373,
+      "cfFingerprintNote": "",
+      "sources": [
+        "example_library.jar!fabric.mod.json"
+      ],
+      "tags": [
+        "基础组件"
+      ],
+      "categoryTaxonomyVersion": 3,
+      "active": true
+    },
+    {
+      "key": "m2",
+      "file": "example_map.jar",
+      "name": "Example Map",
+      "version": "1.0.0",
+      "description": "A synthetic minimap with navigation markers.",
+      "category": "其他 / 待识别",
+      "categoryEvidence": "本地用途规则 · 分类方案 v3",
+      "enabled": true,
+      "loader": "Fabric",
+      "loaders": [
+        "Fabric"
+      ],
+      "components": [
+        {
+          "id": "example_map",
+          "name": "Example Map",
+          "version": "1.0.0",
+          "description": "A synthetic minimap with navigation markers.",
+          "source": "example_map.jar!fabric.mod.json",
+          "nested": false,
+          "environment": "*",
+          "aliases": [],
+          "authors": [
+            "Public demo fixture"
+          ],
+          "projectUrls": []
+        }
+      ],
+      "dependencies": [],
+      "bytes": 368,
+      "sha256": "2fe798ecfe0630743247dd6258cc9ebc76ff403988df618a8e05cafe16bb7b8f",
+      "sha1": "102773c2eafbfb22d48f1d74031c95e95a027ac4",
+      "cfFingerprint": 909008681,
+      "cfFingerprintNote": "",
+      "sources": [
+        "example_map.jar!fabric.mod.json"
+      ],
+      "tags": [],
+      "categoryTaxonomyVersion": 3,
+      "active": true
+    },
+    {
+      "key": "m3",
+      "file": "example_storage.jar",
+      "name": "Example Storage",
+      "version": "1.0.0",
+      "description": "A synthetic item storage network.",
+      "category": "存储",
+      "categoryEvidence": "本地用途规则 · 分类方案 v3",
+      "enabled": true,
+      "loader": "Fabric",
+      "loaders": [
+        "Fabric"
+      ],
+      "components": [
+        {
+          "id": "example_storage",
+          "name": "Example Storage",
+          "version": "1.0.0",
+          "description": "A synthetic item storage network.",
+          "source": "example_storage.jar!fabric.mod.json",
+          "nested": false,
+          "environment": "*",
+          "aliases": [],
+          "authors": [
+            "Public demo fixture"
+          ],
+          "projectUrls": []
+        }
+      ],
+      "dependencies": [
+        {
+          "owner": "example_storage",
+          "target": "example_library",
+          "range": ">=1.0",
+          "type": "required",
+          "side": "BOTH",
+          "loader": "Fabric",
+          "source": "example_storage.jar!fabric.mod.json"
+        }
+      ],
+      "bytes": 391,
+      "sha256": "6a7b73a137d4d9ce8e3f4a0975c0a12ce4e2391ce8b6160ea36b89f9e95bbbde",
+      "sha1": "ab1662c5104c5459afd8eb387a2ae5e315f6d250",
+      "cfFingerprint": 2763934517,
+      "cfFingerprintNote": "",
+      "sources": [
+        "example_storage.jar!fabric.mod.json"
+      ],
+      "tags": [],
+      "categoryTaxonomyVersion": 3,
+      "active": true
+    },
+    {
+      "key": "m4",
+      "file": "example_workshop.jar",
+      "name": "Example Workshop",
+      "version": "1.0.0",
+      "description": "Synthetic automation and processing machines.",
+      "category": "科技",
+      "categoryEvidence": "本地用途规则 · 分类方案 v3",
+      "enabled": true,
+      "loader": "Fabric",
+      "loaders": [
+        "Fabric"
+      ],
+      "components": [
+        {
+          "id": "example_workshop",
+          "name": "Example Workshop",
+          "version": "1.0.0",
+          "description": "Synthetic automation and processing machines.",
+          "source": "example_workshop.jar!fabric.mod.json",
+          "nested": false,
+          "environment": "*",
+          "aliases": [],
+          "authors": [
+            "Public demo fixture"
+          ],
+          "projectUrls": []
+        }
+      ],
+      "dependencies": [
+        {
+          "owner": "example_workshop",
+          "target": "example_library",
+          "range": ">=1.0",
+          "type": "required",
+          "side": "BOTH",
+          "loader": "Fabric",
+          "source": "example_workshop.jar!fabric.mod.json"
+        },
+        {
+          "owner": "example_workshop",
+          "target": "example_transport",
+          "range": ">=1.0",
+          "type": "required",
+          "side": "BOTH",
+          "loader": "Fabric",
+          "source": "example_workshop.jar!fabric.mod.json"
+        }
+      ],
+      "bytes": 435,
+      "sha256": "e1b694390e516d2f0959f65fb5c6834ba6a8fb2fec7c03821d7da36fe1ca0e94",
+      "sha1": "19c159cc11e03203a030785918235ae81534fc35",
+      "cfFingerprint": 2446310200,
+      "cfFingerprintNote": "",
+      "sources": [
+        "example_workshop.jar!fabric.mod.json"
+      ],
+      "tags": [
+        "机器",
+        "自动处理"
+      ],
+      "categoryTaxonomyVersion": 3,
+      "active": true
+    },
+    {
+      "key": "m5",
+      "file": "example_world.jar",
+      "name": "Example World",
+      "version": "1.0.0",
+      "description": "Synthetic terrain and biomes.",
+      "category": "世界生成",
+      "categoryEvidence": "本地用途规则 · 分类方案 v3",
+      "enabled": true,
+      "loader": "Fabric",
+      "loaders": [
+        "Fabric"
+      ],
+      "components": [
+        {
+          "id": "example_world",
+          "name": "Example World",
+          "version": "1.0.0",
+          "description": "Synthetic terrain and biomes.",
+          "source": "example_world.jar!fabric.mod.json",
+          "nested": false,
+          "environment": "*",
+          "aliases": [],
+          "authors": [
+            "Public demo fixture"
+          ],
+          "projectUrls": []
+        }
+      ],
+      "dependencies": [],
+      "bytes": 357,
+      "sha256": "94bb64b443f6d7a8ecd5d0eb3ae10cf643ca59fde6fefb1890390d6a4e67989c",
+      "sha1": "07e223b92477cb694cea03dd0ba895292a48dbae",
+      "cfFingerprint": 3287244282,
+      "cfFingerprintNote": "",
+      "sources": [
+        "example_world.jar!fabric.mod.json"
+      ],
+      "tags": [
+        "地形",
+        "群系"
+      ],
+      "categoryTaxonomyVersion": 3,
+      "active": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "m3",
+      "to": "m1",
+      "id": "example_library",
+      "range": ">=1.0",
+      "source": "example_storage.jar!fabric.mod.json"
+    },
+    {
+      "from": "m4",
+      "to": "m1",
+      "id": "example_library",
+      "range": ">=1.0",
+      "source": "example_workshop.jar!fabric.mod.json"
+    }
+  ],
+  "issues": [
+    {
+      "level": "error",
+      "kind": "missing",
+      "mod": "m4",
+      "text": "缺少已声明的必需依赖：example_transport >=1.0",
+      "source": "example_workshop.jar!fabric.mod.json"
+    }
+  ],
+  "references": [],
+  "files": {},
+  "errors": [],
+  "unchecked": 0,
+  "fileCount": 6,
+  "limits": [
+    "静态读取不等于已通过游戏启动验证。",
+    "用途分类由本地规则推测；脚本文本命中不能证明运行时依赖。",
+    "未分析存档、Mixin 行为和压缩数据包；复杂版本区间可能无法核对。",
+    "Java 实际运行版本未读取；缺少实例版本信息时，基础环境依赖保持待核对。",
+    "Fabric dependency overrides 尚未应用，存在覆盖文件时需手工核对。"
+  ],
+  "demo": true,
+  "demoNotice": "人工构造的本地示例；非真实整合包，也未经过平台或 AI 核验。"
+}
