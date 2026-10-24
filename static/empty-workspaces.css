@@ -1,0 +1,24 @@
+/* Native desktop, no report loaded: tighten inter-card spacing so overview / network fit 1120x700 and 1000x620 without page scroll. Nothing hidden or resized in type. */
+
+/* Shared analysis chrome (overview + network) */
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.issues-view) main{padding-bottom:4px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.issues-view) main>footer{padding:6px 4px 2px}
+
+/* Overview (模组清单) */
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.network-view):not(.issues-view) .os-mast .hero{margin:4px 0 6px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.network-view):not(.issues-view) .import-panel{padding:14px;gap:8px;margin-bottom:10px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.network-view):not(.issues-view) .dropzone{padding:14px 18px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.network-view):not(.issues-view) .import-divider{margin:8px 0}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.network-view):not(.issues-view) .import-label{margin-bottom:0}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.network-view):not(.issues-view) #notice{margin-top:0}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis]:not(.network-view):not(.issues-view) .analysis-empty{padding:24px;margin:0}
+
+/* Network (依赖网络) */
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net .os-title{margin:2px 0 8px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net .os-title h2{margin:2px 0}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net-sheet{height:var(--os-fit,calc(100vh - 300px));min-height:300px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net-bar{padding:8px 16px;gap:6px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net-bar .network-toolbar{padding:0 18px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net-bar .network-legend{padding:0 18px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net-foot{padding:4px 16px}
+body.opus-suite[data-desktop-host=true]:not([data-has-report=true])[data-workspace=analysis].network-view .os-net-foot .network-info{padding:2px 18px}

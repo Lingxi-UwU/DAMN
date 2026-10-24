@@ -1,0 +1,39 @@
+/* Software updates: two sibling paper surfaces, consistent with the settings rail. */
+body.opus-suite #workspace-settings .settings-updates{display:grid;gap:16px;min-width:0}
+body.opus-suite #workspace-settings .settings-updates[hidden]{display:none!important}
+body.opus-suite #workspace-settings .settings-update-sheet{min-width:0;padding:20px 24px;border:1px solid var(--line);border-radius:20px;background:var(--paper);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 12px 32px -28px rgba(28,72,40,.35)}
+.update-options-heading{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:14px}
+body.opus-suite #workspace-settings .update-options-heading h3{margin:0;font-size:18px;line-height:1.4;color:var(--g9)}
+.update-options-heading>span{font-size:11px;color:var(--mut)}
+.update-preference-rows{display:grid;grid-template-columns:86px minmax(0,1fr);align-items:center;gap:10px 16px}
+.update-preference-rows>label{font-size:13px;color:var(--ink)}
+body.opus-suite #workspace-settings .update-preference-rows>select{width:100%;min-width:0;min-height:38px;padding:7px 12px;border:1px solid var(--line);border-radius:10px;background:var(--g0,var(--paper));color:var(--ink);font-size:13px}
+.update-preference-note,.update-preference-status{margin:10px 0 0;font-size:11px;line-height:1.5;color:var(--mut)}
+.update-preference-status{min-height:0;margin:0;max-width:70%;text-align:right}
+body.opus-suite #workspace-settings .update-release-heading{position:static;display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:12px;height:auto;min-height:0;margin:0;padding:0;border:0;background:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+.update-product-mark{display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;color:var(--g7);border-radius:12px;background:var(--g1)}
+.update-product-mark svg{width:30px;height:30px}
+.update-release-identity{flex:1;min-width:150px}
+body.opus-suite #workspace-settings .update-release-identity h3{margin:0;font-size:23px;font-weight:750;letter-spacing:-.035em;line-height:1.2;color:var(--g9)}
+.update-release-identity h3 span{font-variant-numeric:tabular-nums}
+.update-release-identity p{margin:5px 0 0;color:var(--mut);font-size:11px}
+.update-release-actions{display:flex;align-items:center;gap:9px;flex:none}
+body.opus-suite #workspace-settings .update-release-actions button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:7px 12px;font-size:12px;white-space:nowrap}
+body.opus-suite #workspace-settings #updates-install:disabled{background:var(--g1);color:var(--mut);border:1px solid var(--line);box-shadow:none;opacity:.65}
+.update-release-actions .ui-icon{width:16px;height:16px}
+.update-release-body{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.update-release-caption{display:flex;align-items:center;justify-content:space-between;gap:14px}
+body.opus-suite #workspace-settings .update-release-caption h4{margin:0;font-size:12px;font-weight:650;line-height:1.5;color:var(--g9)}
+.update-service-badge{font-size:10px;line-height:1.5;color:var(--mut)}
+.update-release-notes{margin:9px 0 0;padding-left:18px;font-size:12px;line-height:1.75;color:var(--ink)}
+.update-release-notes li+li{margin-top:2px}
+.update-check-status{min-height:18px;margin:12px 0 0;font-size:11px;line-height:1.6;color:var(--mut)}
+.update-release-identity .update-check-status{min-height:0;margin:5px 0 0;font-size:11px;line-height:1.3}
+.update-preference-status.error,.update-check-status.error{color:#ad352a}
+#updates-check[aria-busy=true] .ui-icon{animation:updates-spin .8s linear infinite}
+@keyframes updates-spin{to{transform:rotate(360deg)}}
+@media(max-height:640px){body.opus-suite #workspace-settings .settings-updates{gap:12px}body.opus-suite #workspace-settings .settings-update-sheet{padding:16px 20px}.update-options-heading{margin-bottom:10px}.update-preference-rows{gap:8px 14px}body.opus-suite #workspace-settings .update-preference-rows>select{min-height:34px;padding-block:5px}.update-release-body{margin-top:12px;padding-top:10px}.update-check-status{margin-top:9px}.update-release-notes{margin-top:6px}}
+@media(prefers-reduced-motion:reduce){#updates-check[aria-busy=true] .ui-icon{animation:none}}
+
+/* Compact desktop windows keep both complete cards above the fixed footer. */
+@media(max-height:640px){body.opus-suite #workspace-settings .settings-update-sheet{padding:14px 20px}.update-options-heading{margin-bottom:8px}.update-preference-rows{row-gap:6px}.update-release-body{margin-top:8px}}

@@ -1,0 +1,18 @@
+(function(){'use strict';
+if(window.__damnSettingsCategories)return;
+var root=document.getElementById('settings-dialog');if(!root)return;
+var buttons=Array.prototype.slice.call(root.querySelectorAll('[data-settings-category]')),panels=Array.prototype.slice.call(root.querySelectorAll('[data-settings-panel]'));
+if(buttons.length!==4||panels.length!==4)return;window.__damnSettingsCategories=true;
+var selected='appearance',alive=true,frame=0,epoch=0,footer=root.querySelector('.settings-footer'),security=document.getElementById('settings-security-note'),status=document.getElementById('settings-status'),statuses={},globalStatus={text:status?status.textContent:'',type:''};
+function valid(id){return id==='appearance'||id==='network'||id==='ai'||id==='updates';}
+function activeButton(id){return buttons.find(function(b){return b.dataset.settingsCategory===id;});}
+function resetScroll(stamp){if(frame){cancelAnimationFrame(frame);frame=0;}var sc=document.querySelector('body[data-desktop-host=true] > .app');function reset(){if(!alive||stamp!==epoch||document.body.dataset.workspace!=='settings')return;if(sc)sc.scrollTop=0;else if(typeof window.scrollTo==='function')window.scrollTo({left:0,top:0,behavior:'instant'});}reset();frame=requestAnimationFrame(function(){frame=requestAnimationFrame(function(){frame=0;reset();});});}
+function renderStatus(){if(!status)return;var message=statuses[selected]||globalStatus;if(selected==='network'&&!statuses.network&&!message.type&&message.text.indexOf('保存设置不会调用 AI')===0)message={text:'修改联网选项后，点击“保存设置”生效。',type:''};status.textContent=message.text;status.className='small '+(message.type||'muted');}
+window.damnSetCategorySettingsStatus=function(text,type,category){if(!alive)return;if(category==='ai'||category==='network')statuses[category]={text:text,type:type||''};else{globalStatus={text:text,type:type||''};statuses={};}renderStatus();};
+function select(id,options){if(!alive||!valid(id))return false;options=options||{};var changed=id!==selected,old=panels.find(function(p){return p.dataset.settingsPanel===selected;}),hadFocus=changed&&old&&old.contains(document.activeElement);selected=id;root.dataset.settingsCategory=id;buttons.forEach(function(b){var on=b.dataset.settingsCategory===id;b.setAttribute('aria-selected',String(on));b.setAttribute('tabindex',on?'0':'-1');});panels.forEach(function(p){p.hidden=p.dataset.settingsPanel!==id;});if(footer)footer.hidden=id==='appearance'||id==='updates';if(security)security.hidden=id!=='ai';renderStatus();if(options.focus||hadFocus){var button=activeButton(id);if(button)button.focus({preventScroll:true});}if(changed){epoch++;resetScroll(epoch);if(typeof window.damnSettingsCategoryMotion==='function')window.damnSettingsCategoryMotion({keyboard:!!options.keyboard});}return true;}
+buttons.forEach(function(button,index){button.addEventListener('click',function(){select(button.dataset.settingsCategory);});button.addEventListener('keydown',function(e){var next;if(e.key==='ArrowDown')next=(index+1)%buttons.length;else if(e.key==='ArrowUp')next=(index+buttons.length-1)%buttons.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=buttons.length-1;else return;e.preventDefault();select(buttons[next].dataset.settingsCategory,{focus:true,keyboard:true});});});
+window.damnShowSettingsCategory=function(id){return select(valid(id)?id:selected,{focus:valid(id)});};
+window.addEventListener('pagehide',function(){alive=false;epoch++;if(frame){cancelAnimationFrame(frame);frame=0;}});
+window.addEventListener('pageshow',function(e){if(e.persisted){alive=true;select(selected);}});
+root.dataset.settingsCategories='ready';select(selected);
+})();

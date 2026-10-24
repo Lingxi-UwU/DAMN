@@ -1,0 +1,52 @@
+body:not([data-desktop-host=true]) #desktop-window-controls{display:none}
+body.opus-suite[data-desktop-host=true]{height:100vh;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+body.opus-suite[data-desktop-host=true] .sidebar.workspace-topbar{position:relative;top:auto;flex:none;align-self:stretch;width:auto;margin:8px 8px 0;height:52px;padding:0 96px 0 14px;gap:12px;border-radius:16px;background:rgba(255,255,255,.93);-webkit-backdrop-filter:none;backdrop-filter:none;transform:none;filter:none;contain:none}
+body.opus-suite[data-desktop-host=true] .brand{font-size:21px}
+body.opus-suite[data-desktop-host=true] .brand .desk-mark{width:26px;height:26px}
+body.opus-suite[data-desktop-host=true] .sidebar-link{height:34px;padding:0 12px}
+body.opus-suite[data-desktop-host=true] .sidebar-nav-section{padding:3px}
+body.opus-suite[data-desktop-host=true] .sidebar-bottom{white-space:nowrap}
+body.opus-suite[data-desktop-host=true] .dk-controls{position:fixed;top:18px;right:18px;z-index:2147483000;display:flex;gap:2px;margin:0;padding:0;pointer-events:auto}
+body.opus-suite[data-desktop-host=true] .dk-btn{width:32px;height:32px;display:grid;place-items:center;padding:0;border:0;border-radius:9px;background:transparent;color:var(--mut);box-shadow:none;transition:background .15s,color .15s}
+body.opus-suite[data-desktop-host=true] .dk-btn:hover{background:var(--g1);color:var(--g9)}
+body.opus-suite[data-desktop-host=true] .dk-close:hover{background:#d9483b;color:#fff}
+body.opus-suite[data-desktop-host=true] .dk-btn:active:not(:disabled){transform:none;box-shadow:none}
+body.opus-suite[data-desktop-host=true] .dk-btn:focus-visible{outline:2px solid var(--g5);outline-offset:1px}
+body.opus-suite[data-desktop-host=true] .dk-in-dialog{background:transparent;border-radius:0;padding:0;box-shadow:none}
+body.opus-suite[data-desktop-host=true] .app{flex:1 1 auto;min-height:0;width:auto;margin:0;padding:0 16px;overflow:auto;scrollbar-gutter:stable}
+body.opus-suite[data-desktop-host=true] .app>*{max-width:1360px;margin-left:auto;margin-right:auto}
+body.opus-suite[data-desktop-host=true] .app>header{padding:8px 4px 4px}
+body.opus-suite[data-desktop-host=true] main,body.opus-suite[data-desktop-host=true][data-os-route=prerequisites] main{padding:0 0 12px}
+body.opus-suite[data-desktop-host=true] main>footer{padding:12px 4px 4px}
+body.opus-suite[data-desktop-host=true] .os-note,body.opus-suite[data-desktop-host=true] .prerequisite-input{top:8px}
+body.opus-suite[data-desktop-host=true] .prerequisite-install-bar{bottom:8px;margin-right:0}
+body.opus-suite[data-desktop-host=true] .os-title{margin:8px 0 12px}
+body.opus-suite[data-desktop-host=true] .os-title h1,body.opus-suite[data-desktop-host=true] .os-title h2,body.opus-suite[data-desktop-host=true] #pack-name{font-size:26px}
+body.opus-suite[data-desktop-host=true] .os-mast .hero{margin:8px 0 10px}
+body.opus-suite[data-desktop-host=true] .import-panel{padding:16px;gap:10px;margin-bottom:12px}
+body.opus-suite[data-desktop-host=true] .os-readout,body.opus-suite[data-desktop-host=true] .enrich-panel,body.opus-suite[data-desktop-host=true] .usage-panel,body.opus-suite[data-desktop-host=true] .identity-panel{margin-bottom:12px}
+body.opus-suite[data-desktop-host=true] .os-pre-main{padding:18px;min-height:0}
+body.opus-suite[data-desktop-host=true] .prerequisite-placeholder{padding:48px 20px}
+body.opus-suite[data-desktop-host=true][data-workspace=home] #workspace-home.hm-root{padding:10px 0 6px;gap:12px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-head h1{font-size:26px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-kicker{margin-bottom:6px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-lede{margin-top:4px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-stage{padding:8px;gap:8px;border-radius:24px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-card{padding:16px 20px 16px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-card-head{margin-bottom:12px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-tray .hm-card-head{padding-right:100px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-crate{width:96px;height:80px;top:10px;right:12px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-action{padding-top:12px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-status{min-height:30px;padding:0}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-tool{padding:10px 14px 10px 16px}
+body.opus-suite[data-desktop-host=true] dialog{max-height:calc(100vh - 32px);overflow:auto;padding:18px;transform:none;filter:none;contain:none}
+body.opus-suite[data-desktop-host=true] dialog.ai-setup{transform:none;padding:0;max-height:calc(100vh - 24px);overflow:auto;overscroll-behavior:contain}
+body.opus-suite[data-desktop-host=true] dialog.ai-setup .ai-setup-card{gap:9px;padding:16px 20px 16px}
+
+
+body.opus-suite[data-desktop-host=true] .ai-setup .ai-setup-field input{padding:7px 12px}
+body.opus-suite[data-desktop-host=true] .ai-setup .ai-setup-note{padding:7px 12px;font-size:13px}
+@media (max-height:640px){body.opus-suite[data-desktop-host=true] .ai-setup .ai-setup-intro{font-size:13px;line-height:1.45}body.opus-suite[data-desktop-host=true][data-workspace=home] #workspace-home.hm-root{gap:10px;padding-top:6px}}
+@media (max-width:1100px){body.opus-suite[data-desktop-host=true] .sidebar-bottom{display:none}body.opus-suite[data-desktop-host=true] .sidebar.workspace-topbar{gap:8px;padding-left:10px}body.opus-suite[data-desktop-host=true] .sidebar-link{padding:0 9px;gap:5px}body.opus-suite[data-desktop-host=true] .sidebar-nav-divider{margin:0 3px}body.opus-suite[data-desktop-host=true] .app{padding:0 12px}}
+
+body.opus-suite[data-desktop-host=true] dialog{backdrop-filter:none;-webkit-backdrop-filter:none;will-change:auto}

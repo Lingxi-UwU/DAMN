@@ -1,0 +1,37 @@
+/* Settings categories share DAMN's working surface and main-page motion. */
+body.opus-suite #workspace-settings .settings-layout{display:grid;grid-template-columns:168px minmax(0,1fr);align-items:start;gap:24px}
+body.opus-suite #workspace-settings .settings-categories{position:sticky;top:14px;display:flex;flex-direction:column;gap:5px;padding:10px 18px 22px 0;border-right:1px solid var(--line);min-width:0}
+.settings-categories-label{padding:0 14px 9px;color:var(--mut);font-size:11px;letter-spacing:.04em}
+body.opus-suite #workspace-settings .settings-category{position:relative;display:flex;align-items:center;justify-content:flex-start;gap:12px;width:100%;min-height:48px;padding:10px 14px;border:0;border-radius:12px;background:transparent;color:var(--mut);font-size:14px;font-weight:550;text-align:left;box-shadow:none;transition:background-color 160ms ease,color 160ms ease,transform 140ms cubic-bezier(.23,1,.32,1)}
+body.opus-suite #workspace-settings .settings-category::before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:3px;background:var(--g7);opacity:0;transition:opacity 160ms ease}
+body.opus-suite #workspace-settings .settings-category[aria-selected=true]{background:var(--g1);color:var(--g9);font-weight:700}
+body.opus-suite #workspace-settings .settings-category[aria-selected=true]::before{opacity:1}
+body.opus-suite #workspace-settings .settings-category .ui-icon{width:20px;height:20px;flex:none}
+body.opus-suite #workspace-settings .settings-category:focus-visible{outline:2px solid var(--g7);outline-offset:3px}
+body.opus-suite #workspace-settings .settings-category-content{min-width:0}
+body.opus-suite #workspace-settings .settings-group{display:block;min-width:0;margin:0;padding:23px 24px}
+body.opus-suite #workspace-settings .settings-group[hidden]{display:none!important}
+body.opus-suite #workspace-settings .settings-group-number{display:none}
+body.opus-suite #workspace-settings .settings-group-copy{padding:0;margin:0 0 18px}
+body.opus-suite #workspace-settings .settings-group-copy h3{font-size:18px;line-height:1.4;margin:0;color:var(--g9)}
+body.opus-suite #workspace-settings .settings-group-copy p{max-width:none;margin:6px 0 0;font-size:12px;line-height:1.65}
+body.opus-suite #workspace-settings #settings-appearance .settings-group-copy p+p{display:none}
+body.opus-suite #workspace-settings .settings-footer{margin:16px 0 0;padding:14px 18px;border-radius:17px;gap:16px}
+body.opus-suite #workspace-settings .settings-footer[hidden],body.opus-suite #workspace-settings #settings-security-note[hidden]{display:none!important}
+body.opus-suite #workspace-settings #settings-security-note{margin-top:14px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--g1)}
+body.opus-suite #workspace-settings #settings-dialog .settings-service-fields{gap:16px 18px}
+body.opus-suite #workspace-settings #settings-dialog .settings-service-fields label{font-size:12px}
+body.opus-suite #workspace-settings #settings-dialog .settings-service-fields input{font-size:13px}
+body.opus-suite #workspace-settings button[data-os-press]:not(:disabled){transform:translateY(2px)}
+@media(hover:hover) and (pointer:fine){body.opus-suite #workspace-settings .settings-category:hover:not([aria-selected=true]){background:rgba(255,255,255,.72);color:var(--g9)}}
+@media(max-width:1050px){body.opus-suite #workspace-settings .settings-layout{grid-template-columns:148px minmax(0,1fr);gap:18px}body.opus-suite #workspace-settings .settings-categories{padding-right:14px}body.opus-suite #workspace-settings .settings-group{padding:20px}body.opus-suite #workspace-settings .settings-category{padding-inline:12px;gap:9px}}
+@media(prefers-reduced-motion:reduce){body.opus-suite #workspace-settings .settings-category{transition:background-color 140ms ease,color 140ms ease}body.opus-suite #workspace-settings button[data-os-press]:not(:disabled){transform:none}}
+
+/* Keep the default palette surface complete above the native footer. */
+body.opus-suite #workspace-settings #settings-appearance .settings-group-copy{display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
+body.opus-suite #workspace-settings #settings-appearance .settings-group-copy p{margin:0}
+
+
+@media(max-height:640px){body.opus-suite #workspace-settings .dialog-head{padding-bottom:8px}body.opus-suite #workspace-settings .settings-group{padding:18px}body.opus-suite #workspace-settings #settings-appearance .settings-group-copy{margin-bottom:8px}body.opus-suite #workspace-settings #settings-appearance .appearance-support-note{margin-top:4px}}
+
+@media(max-height:640px){body.opus-suite #workspace-settings .settings-group{padding:16px}}

@@ -1,0 +1,4 @@
+/* The public interface uses one fixed forest-green palette. */
+body.opus-suite .public-appearance-note{display:flex;align-items:center;gap:16px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--g1)}
+.public-appearance-swatch{width:48px;height:48px;flex:none;border-radius:14px;background:#2c6145;box-shadow:inset 0 1px 0 rgba(255,255,255,.18)}
+.public-appearance-note strong{color:var(--g9);font-size:15px}.public-appearance-note p{margin:4px 0 0;color:var(--mut);font-size:12px}

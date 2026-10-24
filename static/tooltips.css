@@ -1,0 +1,8 @@
+/* One quiet tooltip surface; feedback notices keep their existing red popup. */
+body.opus-suite .damn-paper-tooltip{position:fixed;inset:auto;margin:0;padding:9px 12px;max-width:min(340px,calc(100vw - 16px));max-height:min(240px,calc(100vh - 16px));overflow:auto;overscroll-behavior:contain;box-sizing:border-box;border:1px solid var(--line,rgba(38,78,50,.14));border-radius:11px;background:var(--paper,#fff);color:var(--g9,#173a2a);box-shadow:0 2px 5px rgba(23,58,42,.06),0 12px 30px -12px rgba(23,58,42,.23);font-family:inherit;font-size:12px;font-weight:450;line-height:1.6;letter-spacing:normal;text-align:left;text-transform:none;white-space:pre-wrap;overflow-wrap:anywhere;z-index:2147483000;opacity:0;transform:translateY(3px);pointer-events:none;transition:opacity 125ms cubic-bezier(.23,1,.32,1),transform 125ms cubic-bezier(.23,1,.32,1)}
+body.opus-suite .damn-paper-tooltip[data-open]{opacity:1;transform:none;pointer-events:auto}
+body.opus-suite .damn-paper-tooltip[data-side=bottom]{transform:translateY(-3px)}
+body.opus-suite .damn-paper-tooltip[data-side=bottom][data-open]{transform:none}
+body.opus-suite .damn-paper-tooltip[hidden]{display:none!important}
+body.opus-suite .damn-paper-tooltip::backdrop{background:transparent;pointer-events:none}
+@media(prefers-reduced-motion:reduce){body.opus-suite .damn-paper-tooltip{transform:none!important;transition:opacity 125ms ease}}

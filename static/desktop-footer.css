@@ -1,0 +1,16 @@
+/* Native desktop: shared footer as a stationary body row, same bottom on every route. Browser mode untouched. */
+html body.opus-suite[data-desktop-host=true]>.app{margin-bottom:20px}
+body.opus-suite[data-desktop-host=true]>footer[data-desktop-footer=true]{--dk-pad:16px;flex:0 0 24px;align-self:flex-start;box-sizing:border-box;position:relative;z-index:0;display:flex;align-items:center;justify-content:space-between;gap:16px;height:24px;min-height:0;width:min(1360px,calc(100% - 2 * var(--dk-pad) - var(--dk-gutter,0px)));max-width:none;margin:0 0 8px max(var(--dk-pad),calc((100% - var(--dk-gutter,0px) - 1360px) / 2));padding:0 4px;color:var(--mut);font-size:12px;line-height:24px;white-space:nowrap;overflow:hidden;background:none}
+body.opus-suite[data-desktop-host=true]>footer[data-desktop-footer=true]>span{min-width:0;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:1100px){body.opus-suite[data-desktop-host=true]>footer[data-desktop-footer=true]{--dk-pad:12px}}
+
+/* Preserve the home page fit when the footer reserves its own row in short desktop windows. */
+@media (max-height:640px){
+body.opus-suite[data-desktop-host=true][data-workspace=home] main{padding-bottom:8px}
+body.opus-suite[data-desktop-host=true][data-workspace=home] #workspace-home.hm-root{padding-top:4px;padding-bottom:4px;gap:8px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-stage{padding:6px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-card{padding-top:12px;padding-bottom:12px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-card-head{margin-bottom:8px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-action{padding-top:8px}
+body.opus-suite[data-desktop-host=true] #workspace-home .hm-tool{padding-top:8px;padding-bottom:8px}
+}

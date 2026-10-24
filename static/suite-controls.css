@@ -1,0 +1,86 @@
+/* Claude Opus: tactile controls for overview, network, issues, prerequisites. Scoped; additive. */
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(button,summary,[role=button]){transition:transform .46s cubic-bezier(.28,1.7,.45,1),box-shadow .2s ease,background-color .2s ease,color .2s ease,border-color .2s ease,opacity .2s ease;transform-origin:50% 60%;-webkit-tap-highlight-color:transparent}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(button,summary,[role=button]):active:not([data-os-press]){transform:none}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(button,summary,[role=button])[data-os-press]{transform:translateY(3px) scale(.965)}
+
+/* grounded depth */
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button.primary{box-shadow:0 4px 0 var(--g9),0 10px 20px -12px var(--g9)}
+@media (hover:hover) and (pointer:fine){body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button.primary:hover:not(:disabled):not([data-os-press]){transform:translateY(-1px);box-shadow:0 5px 0 var(--g9),0 12px 22px -12px var(--g9)}}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button.primary[data-os-press]{box-shadow:0 1px 0 var(--g9),0 3px 8px -6px var(--g9)}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button.secondary{box-shadow:0 3px 0 #cfdcca}
+@media (hover:hover) and (pointer:fine){body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button.secondary:hover:not(:disabled):not([data-os-press]){transform:translateY(-1px);border-color:var(--g3);box-shadow:0 4px 0 #bfd3b6}}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button.secondary[data-os-press]{box-shadow:0 0 0 #cfdcca;background-color:var(--g1)}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button.quiet[data-os-press]{transform:scale(.93);background-color:var(--g1)}
+body.opus-suite #workspace-prerequisites .prerequisite-install-bar button.primary{box-shadow:0 4px 0 #6f9e58}
+body.opus-suite #workspace-prerequisites .prerequisite-install-bar button.primary:hover:not(:disabled):not([data-os-press]){box-shadow:0 5px 0 #6f9e58;background-color:#b8dca0}
+body.opus-suite #workspace-prerequisites .prerequisite-install-bar button.primary[data-os-press]{box-shadow:0 1px 0 #6f9e58}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(button.primary,button.secondary,button.quiet)>:is(svg.ui-icon,span[aria-hidden=true]),body.opus-suite #scan>span{display:inline-block;transform-origin:50% 50%}
+
+/* segmented switches seat into place */
+body.opus-suite #analysis-workspace .network-view-switch{display:inline-flex;gap:2px;padding:4px;margin:10px 0 8px;border-radius:13px;background:var(--g1);box-shadow:inset 0 1px 2px rgba(23,58,42,.1)}
+body.opus-suite #analysis-workspace .network-view-switch button{height:32px;padding:0 14px;border:0;border-radius:9px;background:transparent;color:var(--mut);font-weight:600;font-size:13px}
+body.opus-suite #analysis-workspace .network-view-switch button[aria-pressed=true]{background:#fff;color:var(--g9);box-shadow:0 2px 0 var(--g5),0 4px 12px -6px rgba(23,58,42,.4)}
+body.opus-suite #analysis-workspace :is(.overview-switch,.network-view-switch) button:hover:not([aria-pressed=true]){color:var(--g9);background:rgba(255,255,255,.6)}
+body.opus-suite #analysis-workspace :is(.overview-switch,.network-view-switch) button[data-os-press]{transform:translateY(1px) scale(.94)}
+body.opus-suite #analysis-workspace :is(.overview-switch,.network-view-switch) button[aria-pressed=true][data-os-press]{box-shadow:0 0 0 var(--g5),0 2px 6px -4px rgba(23,58,42,.4)}
+
+/* usage chips */
+body.opus-suite #analysis-workspace .usage-categories button{box-shadow:0 2px 0 var(--line)}
+@media (hover:hover) and (pointer:fine){body.opus-suite #analysis-workspace .usage-categories button:hover:not([data-os-press]){transform:translateY(-1px);border-color:var(--g3)}}
+body.opus-suite #analysis-workspace .usage-categories button:is([aria-pressed=true],.active){box-shadow:0 2px 0 var(--g9)}
+body.opus-suite #analysis-workspace .usage-categories button[data-os-press]{transform:translateY(2px) scale(.95);box-shadow:none}
+
+/* graph controls (not the canvas) */
+body.opus-suite #analysis-workspace .network-zoom-controls button{min-width:34px;height:32px;justify-content:center;border-radius:9px}
+body.opus-suite #analysis-workspace .network-zoom-controls button:hover:not([data-os-press]){background-color:#fff}
+body.opus-suite #analysis-workspace .network-zoom-controls button[data-os-press]{transform:scale(.9);background-color:#fff}
+body.opus-suite #analysis-workspace :is(.network-relation-item,.network-tree-leaf){transition:transform .4s cubic-bezier(.28,1.7,.45,1),background-color .15s ease,box-shadow .2s ease}
+@media (hover:hover) and (pointer:fine){body.opus-suite #analysis-workspace :is(.network-relation-item,.network-tree-leaf):hover:not([data-os-press]){transform:translateX(3px)}}
+body.opus-suite #analysis-workspace :is(.network-relation-item,.network-tree-leaf)[data-os-press]{transform:translateX(1px) scale(.98)}
+
+/* catalogue rows */
+body.opus-suite #analysis-workspace .mod-list>.mod-row{transition:transform .4s cubic-bezier(.28,1.7,.45,1),background-color .15s ease,box-shadow .2s ease}
+@media (hover:hover) and (pointer:fine){body.opus-suite #analysis-workspace .mod-list>.mod-row:hover:not([data-os-press]){transform:translateX(3px)}}
+body.opus-suite #analysis-workspace .mod-list>.mod-row[data-os-press]{transform:translateX(2px) scale(.985)}
+body.opus-suite #analysis-workspace .mod-list>.mod-row::before{transform:scaleY(.3);transition:opacity .2s ease,transform .38s cubic-bezier(.28,1.7,.45,1)}
+body.opus-suite #analysis-workspace .mod-list>.mod-row.selected::before{transform:none}
+
+/* dropzone */
+body.opus-suite #analysis-workspace #dropzone{transition:transform .46s cubic-bezier(.28,1.7,.45,1),border-color .2s ease,background-color .2s ease}
+body.opus-suite #analysis-workspace #dropzone:hover{background-color:#e7f2df}
+body.opus-suite #analysis-workspace #dropzone[data-os-press]{transform:translateY(2px) scale(.988)}
+body.opus-suite #analysis-workspace #dropzone .drop-icon{transition:transform .4s cubic-bezier(.28,1.7,.45,1),box-shadow .2s ease;box-shadow:0 3px 0 var(--g3)}
+@media (hover:hover) and (pointer:fine){body.opus-suite #analysis-workspace #dropzone:hover .drop-icon{transform:translateY(-3px)}}
+
+/* disclosure */
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) summary[data-os-press]{transform:translateY(1px) scale(.992)}
+body.opus-suite #analysis-workspace .disclosure-hint span[aria-hidden=true]{display:inline-block;transition:transform .4s cubic-bezier(.28,1.7,.45,1)}
+body.opus-suite #analysis-workspace details[open]>summary .disclosure-hint span[aria-hidden=true]{transform:rotate(180deg)}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(.prerequisite-advanced,.identity-file-details)>summary{border-radius:8px}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(.prerequisite-advanced,.identity-file-details)>summary::before{content:'\203A';display:inline-block;width:1em;margin-right:4px;text-align:center;font-weight:700;transition:transform .35s cubic-bezier(.28,1.7,.45,1)}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(.prerequisite-advanced,.identity-file-details)[open]>summary::before{transform:rotate(90deg)}
+
+/* fields */
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(input:not([type=checkbox]):not([type=file]),select){transition:border-color .18s ease,box-shadow .22s ease,background-color .18s ease}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(input:not([type=checkbox]),select):hover:not(:focus){border-color:var(--g3)}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(input:not([type=checkbox]),select):focus{background-color:#fff;border-color:var(--g5);box-shadow:0 0 0 4px rgba(79,138,94,.18),0 2px 0 var(--g5)}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) input[type=checkbox]{cursor:pointer;border-radius:4px;transition:box-shadow .2s ease}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) input[type=checkbox]:hover:not(:disabled){box-shadow:0 0 0 4px rgba(79,138,94,.16)}
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) label:has(>input[type=checkbox]){cursor:pointer}
+
+/* finding & candidate cards */
+body.opus-suite :is(#analysis-workspace .checks-scroll,#workspace-prerequisites .prerequisite-items)>*{transition:transform .4s cubic-bezier(.28,1.7,.45,1),border-color .2s ease,box-shadow .2s ease}
+@media (hover:hover) and (pointer:fine){body.opus-suite :is(#analysis-workspace .checks-scroll,#workspace-prerequisites .prerequisite-items)>*:hover{transform:translateX(3px);border-color:var(--g3);box-shadow:0 6px 16px -12px rgba(23,58,42,.45)}}
+
+/* real stage tag */
+body.opus-suite #workspace-prerequisites #prerequisite-state-tag{display:inline-block;padding:3px 7px;border-radius:7px;background:rgba(255,255,255,.7)}
+
+/* disabled never moves */
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) button:disabled{transform:none;box-shadow:none}
+body.opus-suite #workspace-prerequisites .prerequisite-install-bar button:disabled{box-shadow:none}
+
+/* quick press-in timing (last so it wins) */
+body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(button,summary,[role=button])[data-os-press][data-os-press]{transition-duration:.07s;transition-timing-function:cubic-bezier(.3,0,.6,1)}
+
+@media (prefers-reduced-motion:reduce){body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(button,summary,[role=button],#dropzone,#dropzone .drop-icon,.checks-scroll>*,.prerequisite-items>*,.mod-list>.mod-row,.network-relation-item,.network-tree-leaf,input[type=checkbox]){transform:none!important;translate:none!important;scale:none!important;transition-property:background-color,color,border-color,box-shadow,opacity!important;transition-duration:.15s!important;transition-timing-function:ease!important}body.opus-suite #analysis-workspace .mod-list>.mod-row::before{transform:none;transition:opacity .2s ease}body.opus-suite #analysis-workspace .disclosure-hint span[aria-hidden=true],body.opus-suite :is(#analysis-workspace,#workspace-prerequisites) :is(.prerequisite-advanced,.identity-file-details)>summary::before{transition:none}}
+
