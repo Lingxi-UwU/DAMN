@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN" data-page-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAMN · Minecraft 整合包依赖分析</title>
+<meta name="description" content="DAMN 是桌面端 Minecraft 整合包静态分析工具：扫描本地模组、梳理声明依赖、定位待核对的问题。查看真实界面、数据使用说明与源码。" data-i18n-content="description">
+<meta name="theme-color" content="#123c2d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DAMN · Minecraft 整合包依赖分析" data-i18n-content="pageTitle">
+<meta property="og:description" content="DAMN 是桌面端 Minecraft 整合包静态分析工具：扫描本地模组、梳理声明依赖、定位待核对的问题。查看真实界面、数据使用说明与源码。" data-i18n-content="description">
+<meta property="og:locale" content="zh_CN" id="og-locale">
+<meta property="og:url" content="https://lingxi-uwu.github.io/DAMN/" id="og-url">
+<meta property="og:image" content="https://lingxi-uwu.github.io/DAMN/assets/overview.webp">
+<meta property="og:image:alt" content="DAMN 中文桌面界面中的模组总览，展示虚构示例模组列表、版本与扫描结果" data-i18n-content="overviewAlt">
+<link rel="canonical" href="https://lingxi-uwu.github.io/DAMN/" id="canonical">
+<link rel="alternate" hreflang="zh-CN" href="https://lingxi-uwu.github.io/DAMN/">
+<link rel="alternate" hreflang="en" href="https://lingxi-uwu.github.io/DAMN/en.html">
+<link rel="alternate" hreflang="x-default" href="https://lingxi-uwu.github.io/DAMN/en.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){try{var q=new URLSearchParams(location.search).get('lang');var explicit=q==='en'||q==='zh'?q:null;var pathEnglish=/\/en\.html$/i.test(location.pathname);var saved=null;try{saved=localStorage.getItem('damn-site-language')}catch(e){}var preferred=null;var langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<langs.length;i++){if(/^zh(?:-|$)/i.test(langs[i])){preferred='zh';break}if(/^en(?:-|$)/i.test(langs[i])){preferred='en';break}}var selected=explicit||(pathEnglish?'en':(saved==='zh'||saved==='en'?saved:preferred||'en'));var current=document.documentElement.lang.indexOf('en')===0?'en':'zh';if(selected!==current){var next=new URL(selected==='en'?'en.html':'index.html',location.href);next.search=location.search;next.hash=location.hash;location.replace(next.href)}}catch(e){}})();</script>
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+<div class="hero-field">
+<header class="site-header frame">
+<a class="brand" href="#top" aria-label="DAMN — Dependency Analysis and Mod Network"><span class="wordmark">DAMN<span aria-hidden="true">.</span></span><span class="brand-full">Dependency Analysis<span class="brand-break"> &amp; Mod Network</span></span></a>
+<nav class="main-nav" aria-label="主要导航" data-i18n-aria-label="navLabel">
+<a href="#product" data-i18n="navProduct">功能</a><a href="#get-started" data-i18n="navWorkflow">本地运行</a><a href="#data" data-i18n="navData">数据与 API</a><a href="#faq" data-i18n="navFaq">常见问题</a>
+</nav>
+<div class="language-control" role="group" aria-label="选择语言" data-i18n-aria-label="languageLabel"><a href="index.html?lang=zh" lang="zh-CN" hreflang="zh-CN" data-language="zh" aria-label="切换到中文" data-i18n-aria-label="langChinese" aria-current="true">中文</a><a href="en.html?lang=en" lang="en" hreflang="en" data-language="en" aria-label="Switch to English" data-i18n-aria-label="langEnglish" >English</a></div>
+</header>
+</div>
+<main id="main">
+<div class="hero-field">
+<section class="hero frame" aria-labelledby="hero-title">
+<div class="hero-copy">
+<h1 data-i18n="heroTitle" id="hero-title" data-reveal>看清模组，理清关联。</h1>
+<p data-i18n="heroCopy" class="hero-description" data-reveal>DAMN 是桌面端 Minecraft 整合包静态分析工具。扫描本地模组，展开声明依赖，把需要核对的问题摆到眼前。</p>
+<a class="button button-lime" href="https://github.com/Lingxi-UwU/DAMN" data-reveal><span data-i18n="source">查看源码</span><span aria-hidden="true">↗</span></a>
+<p data-i18n="heroNote" class="hero-note" data-reveal>公开版本 0.5.6 · 通过 Python 3.11+ 从源码运行</p>
+<a class="text-link hero-explore" href="#product" data-reveal><span data-i18n="heroExplore">看看它如何工作</span><span aria-hidden="true">↓</span></a>
+</div>
+<figure class="demo-figure" data-reveal>
+<div class="dependency-demo" data-ui>
+<div class="demo-toolbar"><strong data-i18n="demoTitle">依赖关系，点开就明白</strong><span data-i18n="demoMode">本地声明</span></div>
+<p data-i18n="demoHint" class="demo-hint">选择一个模组，查看它需要什么。</p>
+<div class="dependency-graph" role="group" aria-label="选择示例模组" data-i18n-aria-label="demoGroup">
+<svg class="graph-edges" viewBox="0 0 600 230" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="currentColor"/></marker></defs><path class="edge edge-storage" d="M245 35 C305 35 305 105 355 105"/><path class="edge edge-workshop is-active" d="M245 195 C305 195 305 105 355 105"/><path class="edge edge-missing is-active" d="M245 195 C295 195 305 195 355 195"/></svg>
+<button type="button" class="mod-node source-node node-storage" data-mod="storage" aria-pressed="false"><span>ExampleStorage</span><small>example_storage</small></button>
+<button type="button" class="mod-node source-node node-workshop is-selected" data-mod="workshop" aria-pressed="true"><span>ExampleWorkshop</span><small>example_workshop</small></button>
+<div class="mod-node node-library"><span>ExampleLibrary</span><small data-i18n="demoDeclared">声明依赖</small></div>
+<div class="mod-node node-missing"><span>example_transport</span><small><span data-i18n="demoMissing">缺少前置</span> ≥1.0</small></div>
+</div>
+<div class="demo-detail" aria-live="polite" aria-atomic="true"><span class="detail-label" data-i18n="demoSelection">已选择的模组</span><strong id="selected-mod">ExampleWorkshop</strong><p id="selection-result" data-i18n="demoWorkshopResult">ExampleWorkshop 声明依赖 ExampleLibrary；另缺少 example_transport ≥1.0。</p><span class="evidence" data-i18n="demoEvidence">证据：本地 JAR 声明</span></div>
+<p data-i18n="demoLimit" class="demo-limit">静态依赖结果不等于游戏能够启动。</p>
+</div>
+<figcaption data-i18n="demoCaption" >可交互片段来自项目公开演示；以上均为虚构示例模组。</figcaption>
+</figure>
+</section>
+</div>
+<section class="product-section section frame" id="product" aria-labelledby="product-title">
+<div class="section-intro"><div><h2 data-i18n="productTitle" id="product-title" data-reveal>清单与问题，都有依据。</h2><p data-i18n="productCopy" data-reveal>同一份整合包，用不同视角核对。先看本地证据，再看补充信息，让每个结论都有来处。</p></div><p data-i18n="overviewText" class="intro-aside" data-reveal>文件与元数据放在一起，先确认你正在分析什么。</p></div>
+<figure class="product-figure overview-figure" data-reveal><a class="capture-link" href="assets/overview.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面中的模组总览，展示虚构示例模组列表、版本与扫描结果" data-i18n-aria-label="overviewAlt"><img src="assets/overview.webp" alt="DAMN 中文桌面界面中的模组总览，展示虚构示例模组列表、版本与扫描结果" data-i18n-alt="overviewAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="overviewCaption" >模组总览 · 真实桌面界面，虚构演示快照</figcaption></figure>
+<div class="network-story story-row"><figure class="product-figure " data-reveal><a class="capture-link" href="assets/network.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面的依赖网络，展示虚构示例模组之间的关联" data-i18n-aria-label="networkAlt"><img src="assets/network.webp" alt="DAMN 中文桌面界面的依赖网络，展示虚构示例模组之间的关联" data-i18n-alt="networkAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="networkCaption" >依赖网络 · 真实桌面界面，虚构演示快照</figcaption></figure><div class="story-copy"><h2 data-i18n="networkTitle" data-reveal>顺着关系，找到前置。</h2><p data-i18n="networkCopy" data-reveal>依赖网络呈现模组之间的声明关系。选中一个节点，查看直接关联，区分已有前置与待核对的缺项。</p></div></div>
+<div class="checks-story story-row"><div class="story-copy"><h2 data-i18n="checksTitle" data-reveal>把待核对项，单独列清。</h2><p data-i18n="checksCopy" data-reveal>静态检查帮助定位缺失依赖、版本条件等问题。结果是排查线索；实际加载、运行表现仍需在游戏中验证。</p></div><figure class="product-figure " data-reveal><a class="capture-link" href="assets/checks.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面的静态检查视图，列出虚构演示数据中的待核对问题" data-i18n-aria-label="checksAlt"><img src="assets/checks.webp" alt="DAMN 中文桌面界面的静态检查视图，列出虚构演示数据中的待核对问题" data-i18n-alt="checksAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="checksCaption" >静态检查 · 真实桌面界面，虚构演示快照</figcaption></figure></div>
+</section>
+<section class="workflow-field" id="get-started" aria-labelledby="workflow-title"><div class="section frame">
+<div class="workflow-heading"><h2 data-i18n="workflowTitle" id="workflow-title" data-reveal>从你的整合包开始。</h2><p data-i18n="workflowIntro" data-reveal>导入、扫描、核对。保留本地证据，再按需要补充联网信息。</p></div>
+<div class="workflow-content"><div class="exchange-list"><div class="exchange" data-reveal><h3 data-i18n="workflowFirst" >先导入文件。</h3><p data-i18n="workflowFirstCopy" >选择本地模组目录，或导入 ZIP / MRPACK 整合包。</p></div><div class="exchange" data-reveal><h3 data-i18n="workflowSecond" >再读取声明。</h3><p data-i18n="workflowSecondCopy" >解析本地模组元数据与声明依赖，整理清单、关联与静态检查结果。</p></div><div class="exchange" data-reveal><h3 data-i18n="workflowThird" >最后确认操作。</h3><p data-i18n="workflowThirdCopy" >需要补充前置时，先核对候选文件；下载与安装操作由用户确认。</p></div></div><figure class="product-figure " data-reveal><a class="capture-link" href="assets/import.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面的整合包导入流程，展示本地目录与压缩包输入" data-i18n-aria-label="importAlt"><img src="assets/import.webp" alt="DAMN 中文桌面界面的整合包导入流程，展示本地目录与压缩包输入" data-i18n-alt="importAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="importCaption" >整合包导入 · 真实桌面界面，虚构演示快照</figcaption></figure></div>
+<div class="run-source" data-reveal><h3 data-i18n="runTitle" >从源码运行</h3><p data-i18n="runCopy" >当前公开版本 0.5.6 提供源码，需要 Python 3.11+。Windows 桌面模式还需要 Microsoft Edge WebView2 Runtime。环境准备与启动方式以仓库说明为准。</p><a class="button button-forest" data-setup-link href="https://github.com/Lingxi-UwU/DAMN/blob/main/docs/RUNNING.md"><span data-i18n="readme">阅读运行说明</span><span aria-hidden="true">↗</span></a></div>
+</div></section>
+<section class="data-field" id="data" aria-labelledby="data-title"><div class="section frame">
+<div class="data-heading"><h2 data-i18n="dataTitle" id="data-title" data-reveal>数据去向，说清楚。</h2><p data-i18n="dataIntro" data-reveal>分析发生在桌面应用中。联网补全与 AI 配置决定哪些上下文会离开本机。</p></div>
+<dl class="data-exchanges">
+<div data-reveal><dt data-i18n="dataLocal" >本地分析</dt><dd data-i18n="dataLocalCopy" >基础扫描与声明依赖分析可在本地进行，无需填写 AI 密钥。这个介绍网站仅为静态页面，不接收模组文件、密钥或分析请求，也没有统计追踪与提交表单。</dd></div>
+<div data-reveal><dt data-i18n="dataNetwork" >联网补全</dt><dd data-i18n="dataNetworkCopy" >桌面应用默认开启联网补全，可在设置中关闭。启用时，可能向所使用的平台发送模组名称、文件哈希与平台标识，用于识别文件、查询元数据和依赖。</dd></div>
+<div data-reveal><dt data-i18n="dataAi" >配置 AI 后</dt><dd data-i18n="dataAiCopy" >你配置的 AI 服务可能收到与分析相关的上下文。联网补全过程可能自动调用已配置的 AI；如不希望发送这些内容，请先关闭相关功能。</dd></div>
+<div data-reveal><dt data-i18n="dataCf" >CurseForge 接入状态</dt><dd><p data-i18n="dataCfCopy">CurseForge 接入仍待 API 审核与后续实现核对。拟议用途为识别本地文件、获取元数据与依赖；仅在平台允许且用户确认后下载获授权的文件。</p><p data-i18n="dataCfNote" class="data-note">本项目是独立个人项目，未宣称获得 CurseForge 官方背书。</p></dd></div>
+</dl>
+</div></section>
+<section class="about-section section frame" aria-labelledby="about-title"><div class="about-heading"><h2 data-i18n="aboutTitle" id="about-title" data-reveal>项目与使用边界</h2><p data-i18n="aboutCopy" data-reveal>DAMN · Dependency Analysis &amp; Mod Network。一个围绕 Minecraft 整合包依赖与静态证据展开的个人项目。</p></div><div class="about-letter"><div data-reveal><h3 data-i18n="licenseTitle" >部分源码公开</h3><p data-i18n="licenseCopy" >公开仓库发布的是部分源码，采用自定义非商业许可证；不是 MIT、GPL 或 OSI 认可的开源许可证。使用、修改与分发前，请阅读仓库中的许可与源码范围说明。</p><div class="inline-links"><a class="text-link" href="https://github.com/Lingxi-UwU/DAMN/blob/main/LICENSE.txt" data-i18n="licenseLink">阅读许可证</a><a class="text-link" href="https://github.com/Lingxi-UwU/DAMN/blob/main/SOURCE-MANIFEST.json" data-i18n="manifestLink">查看源码范围</a></div></div><div data-reveal><h3 data-i18n="aiTitle" >开发方式</h3><p data-i18n="aiCopy" >项目开发过程中使用了 AI 辅助编写代码。功能说明与实际实现以公开源码、仓库文档和当前版本为准。</p></div></div></section>
+<section class="faq-section section frame" id="faq" aria-labelledby="faq-title"><h2 data-i18n="faqTitle" id="faq-title" data-reveal>常见问题</h2><div class="faq-layout" data-reveal><nav class="faq-index" aria-label="选择一个问题" data-i18n-aria-label="faqIndex"><a href="#answer-1" id="question-1" data-faq="1" data-i18n="faq1">必须配置 AI 才能使用吗？</a><a href="#answer-2" id="question-2" data-faq="2" data-i18n="faq2">现在可以下载 EXE 吗？</a><a href="#answer-3" id="question-3" data-faq="3" data-i18n="faq3">检查通过，就一定能启动吗？</a><a href="#answer-4" id="question-4" data-faq="4" data-i18n="faq4">模组信息会上传吗？</a><a href="#answer-5" id="question-5" data-faq="5" data-i18n="faq5">能用于商业项目吗？</a><a href="#answer-6" id="question-6" data-faq="6" data-i18n="faq6">这是 CurseForge 官方工具吗？</a></nav><div class="faq-answers"><article id="answer-1" aria-labelledby="question-1"><h3 data-i18n="faq1">必须配置 AI 才能使用吗？</h3><p data-i18n="faq1Answer">不需要。基础本地扫描、模组元数据读取与声明依赖分析无需 AI 密钥。配置 AI 后，相关功能可能向你指定的服务发送分析上下文。</p></article><article id="answer-2" aria-labelledby="question-2"><h3 data-i18n="faq2">现在可以下载 EXE 吗？</h3><p data-i18n="faq2Answer">当前公开版本 0.5.6 通过源码提供。本页的按钮指向实际 GitHub 仓库；请按仓库说明准备 Python 3.11+ 环境并运行。</p></article><article id="answer-3" aria-labelledby="question-3"><h3 data-i18n="faq3">检查通过，就一定能启动吗？</h3><p data-i18n="faq3Answer">不能据此保证。DAMN 做的是静态分析，无法覆盖游戏运行时的所有交互、配置与环境差异。请结合日志和实际游戏测试继续核对。</p></article><article id="answer-4" aria-labelledby="question-4"><h3 data-i18n="faq4">模组信息会上传吗？</h3><p data-i18n="faq4Answer">桌面应用的联网补全默认开启，可关闭。启用时会按所用服务发送模组名称、哈希或平台标识；已配置的 AI 也可能收到上下文，并在补全时自动被调用。详情见本页“数据与 API”。</p></article><article id="answer-5" aria-labelledby="question-5"><h3 data-i18n="faq5">能用于商业项目吗？</h3><p data-i18n="faq5Answer">公开源码使用自定义非商业许可证。请直接阅读仓库 LICENSE.txt 中的授权范围；如需核对超出许可范围的用途，请在项目仓库提交 Issue。</p></article><article id="answer-6" aria-labelledby="question-6"><h3 data-i18n="faq6">这是 CurseForge 官方工具吗？</h3><p data-i18n="faq6Answer">不是。这是独立个人项目。CurseForge 接入仍待 API 审核与后续实现核对；平台名称仅用于说明拟议的集成用途。</p></article></div></div></section>
+<section class="contact-field" aria-labelledby="contact-title"><div class="contact-section frame"><h2 data-i18n="contactTitle" id="contact-title" data-reveal>让问题，有地方落下。</h2><div><p data-i18n="contactCopy" data-reveal>发现问题、提出想法，或核对项目用途，都可以从 GitHub 开始。</p><div class="contact-actions" data-reveal><a class="button button-forest" href="https://github.com/Lingxi-UwU/DAMN/issues"><span data-i18n="issues">提交或查看问题</span><span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/Lingxi-UwU" data-i18n="maintainer">维护者主页</a></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="frame footer-top"><p data-i18n="footerCopy">把依赖说清，把结论留给证据。</p><nav aria-label="DAMN"><a href="https://github.com/Lingxi-UwU/DAMN/blob/main/LICENSE.txt" data-i18n="footerLicense">许可证</a><a href="https://github.com/Lingxi-UwU/DAMN#readme" data-i18n="footerSource">源码与说明</a><a href="#data" data-i18n="footerData">数据说明</a><a href="#top" data-i18n="footerBack">回到顶部</a></nav></div><div class="frame footer-bottom"><div class="footer-wordmark" aria-hidden="true">DAMN.</div><p>Dependency Analysis<br>&amp; Mod Network<span data-i18n="footerIndependent">独立 Minecraft 工具项目</span></p></div></footer>
+</body>
+</html>

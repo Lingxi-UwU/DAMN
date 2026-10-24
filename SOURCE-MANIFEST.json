@@ -5,15 +5,17 @@
   "preparedAt": "2026-10-25",
   "license": "DAMN-Source-Noncommercial-1.0",
   "rightsNotice": "Conditional on actual licensable rights. AI-assisted code; no determination that every file has copyright or that third-party rights are cleared.",
-  "manifestSelfPolicy": "This manifest lists every other packaged file. The ZIP contains these files plus SOURCE-MANIFEST.json; its own digest is not self-referentially embedded.",
+  "manifestSelfPolicy": "Lists every non-manifest file expected in the public repository after applying the website overlay. The incremental website ZIP contains only new or replaced files plus this manifest and requires the original 0.5.6 public source files. The manifest does not embed its own digest.",
   "excluded": [
     "full original development folder and Git history",
     "personal profiles and API keys",
     "private appearance, activation, issuer and device-binding implementations",
     "official update and notification service implementation",
     "original screenshot-derived taxonomy hierarchy and numeric mapping",
-    "old binary releases, caches, logs and real scan reports"
+    "old binary releases, caches, logs and real scan reports",
+    "website preview tools, browser profiles, QA reports and private recordings"
   ],
+  "websiteRevision": "2026-10-25",
   "files": [
     {
       "path": ".gitattributes",
@@ -40,9 +42,15 @@
       "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
     },
     {
+      "path": "README.en.md",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 6176,
+      "sha256": "30a15ccab49fde2fdfe13d4736dfb084604109b4a6dd1fc1b7c1585f948faf15"
+    },
+    {
       "path": "README.md",
-      "bytes": 4703,
-      "sha256": "33c2142d8f1bf4f025aba167cfcf6d4da66c25eac80aea8ae16caacd036a5e73",
+      "bytes": 5004,
+      "sha256": "596493b8fd2b4ce54ef49242c9185a3909109e5b001bfa82490af6788212e696",
       "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
     },
     {
@@ -158,6 +166,60 @@
       "bytes": 1330,
       "sha256": "0b486b4cc62f3c60262479b167545d224dc6628e5449f6c5d873497a182a5378",
       "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "path": "docs/assets/checks.webp",
+      "licenseScope": "DAMN application UI screenshot with synthetic demonstration data; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 178614,
+      "sha256": "9307e4ff6f66c561bc783c394e424c082ac77a810fb5d7f52e0806168dd45084"
+    },
+    {
+      "path": "docs/assets/import.webp",
+      "licenseScope": "DAMN application UI screenshot with synthetic demonstration data; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 188998,
+      "sha256": "1f018003d1e5db12dcef1304e57cb6c5c6d41d18411479eca44d7672b32eb60e"
+    },
+    {
+      "path": "docs/assets/network.webp",
+      "licenseScope": "DAMN application UI screenshot with synthetic demonstration data; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 172050,
+      "sha256": "6f92323460c2959fc86c3ed94d1e85543fb6a023ff24010651a800c70e3d607e"
+    },
+    {
+      "path": "docs/assets/overview.webp",
+      "licenseScope": "DAMN application UI screenshot with synthetic demonstration data; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 217776,
+      "sha256": "5f3c62a153f291c1f83d9c49cd09c907a0e45518e11edea30af572728ade7f63"
+    },
+    {
+      "path": "docs/en.html",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 20289,
+      "sha256": "cf36762f4a693f65c9253698286fa15c6e61d723a5d8678a3d447cbd7435e3ae"
+    },
+    {
+      "path": "docs/favicon.svg",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 214,
+      "sha256": "5fb3796243985d753a0192855f31dfcc090bf37b00e7ccbfcb78f5ceef857b44"
+    },
+    {
+      "path": "docs/index.html",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 19360,
+      "sha256": "34e902c4097ed6cd70c6e41663826503b30a0166cf3445c91c343ff6744bf9b5"
+    },
+    {
+      "path": "docs/site.css",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 19794,
+      "sha256": "a3f03a9f6d861a4635fa8b42c686a3c9f4add2f476eca15d466aedcce22a7e47"
+    },
+    {
+      "path": "docs/site.js",
+      "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
+      "bytes": 28459,
+      "sha256": "8f1d0fefd46810c65e488ba7e04c9731f0711655740a8bdf8845f72a872456f7"
     },
     {
       "path": "enrichment.py",

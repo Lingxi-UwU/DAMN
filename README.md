@@ -1,5 +1,9 @@
 # DAMN
 
+[简体中文](README.md) | [English](README.en.md)
+
+[项目官网](https://lingxi-uwu.github.io/DAMN/) · [English website](https://lingxi-uwu.github.io/DAMN/en.html)
+
 Minecraft 模组依赖网络与整合包静态分析工具。
 
 这是 **0.5.6 部分源码公开版**，用于学习、检查和非商业修改。它是可运行的独立源码目录，不包含完整应用的所有实现。项目代码由 AI 工具参与编写；用户负责需求、取舍、测试反馈与发布决定，不将其表述为纯人工独立编写。
@@ -40,6 +44,8 @@ python -X utf8 desktop.py
 公开版默认使用 %LOCALAPPDATA%/DAMN-Public/.damn-public-user，与完整应用的设置分开。可使用 DAMN_PUBLIC_DATA_DIR 环境变量或 --data-dir 指定其他开发数据目录。
 
 源码不包含 API Key。AI 是可选功能，请填写自己的地址、模型和密钥；调用费用由对应服务商计算。保存设置不会自动发起 AI 分析。默认开启扫描后的联网补全；可在“设置 → 联网资料”关闭。开启时会向平台发送模组名称、哈希和平台 ID；配置可用 AI 后，补全流程也可能调用 AI。Windows 下密钥由当前用户的 DPAPI 保护；其他系统仅在本次会话中保留密钥。扫描目录、报告和设置不要上传到仓库。
+
+CurseForge 项目级接入仍待 API 审核与后续实现核对；公开这些接口代码不表示获得官方授权或背书。
 
 ## 公开范围
 
