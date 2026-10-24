@@ -19,8 +19,8 @@
 <link rel="alternate" hreflang="x-default" href="https://lingxi-uwu.github.io/DAMN/en.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>(function(){try{var q=new URLSearchParams(location.search).get('lang');var explicit=q==='en'||q==='zh'?q:null;var pathEnglish=/\/en\.html$/i.test(location.pathname);var saved=null;try{saved=localStorage.getItem('damn-site-language')}catch(e){}var preferred=null;var langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<langs.length;i++){if(/^zh(?:-|$)/i.test(langs[i])){preferred='zh';break}if(/^en(?:-|$)/i.test(langs[i])){preferred='en';break}}var selected=explicit||(pathEnglish?'en':(saved==='zh'||saved==='en'?saved:preferred||'en'));var current=document.documentElement.lang.indexOf('en')===0?'en':'zh';if(selected!==current){var next=new URL(selected==='en'?'en.html':'index.html',location.href);next.search=location.search;next.hash=location.hash;location.replace(next.href)}}catch(e){}})();</script>
-<link rel="stylesheet" href="site.css">
-<script src="site.js" defer></script>
+<link rel="stylesheet" href="site.css?v=20261025-2">
+<script src="site.js?v=20261025-2" defer></script>
 </head>
 <body id="top">
 <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
@@ -39,8 +39,8 @@
 <div class="hero-copy">
 <h1 data-i18n="heroTitle" id="hero-title" data-reveal>看清模组，理清关联。</h1>
 <p data-i18n="heroCopy" class="hero-description" data-reveal>DAMN 是桌面端 Minecraft 整合包静态分析工具。扫描本地模组，展开声明依赖，把需要核对的问题摆到眼前。</p>
-<a class="button button-lime" href="https://github.com/Lingxi-UwU/DAMN" data-reveal><span data-i18n="source">查看源码</span><span aria-hidden="true">↗</span></a>
-<p data-i18n="heroNote" class="hero-note" data-reveal>公开版本 0.5.6 · 通过 Python 3.11+ 从源码运行</p>
+<div class="hero-action-row"><a class="button button-lime" href="https://github.com/Lingxi-UwU/DAMN" data-reveal><span data-i18n="source">查看源码</span><span aria-hidden="true">↗</span></a>
+<p data-i18n="heroNote" class="hero-note" data-reveal>公开版本 0.5.6 · 通过 Python 3.11+ 从源码运行</p></div>
 <a class="text-link hero-explore" href="#product" data-reveal><span data-i18n="heroExplore">看看它如何工作</span><span aria-hidden="true">↓</span></a>
 </div>
 <figure class="demo-figure" data-reveal>
@@ -63,9 +63,12 @@
 </div>
 <section class="product-section section frame" id="product" aria-labelledby="product-title">
 <div class="section-intro"><div><h2 data-i18n="productTitle" id="product-title" data-reveal>清单与问题，都有依据。</h2><p data-i18n="productCopy" data-reveal>同一份整合包，用不同视角核对。先看本地证据，再看补充信息，让每个结论都有来处。</p></div><p data-i18n="overviewText" class="intro-aside" data-reveal>文件与元数据放在一起，先确认你正在分析什么。</p></div>
-<figure class="product-figure overview-figure" data-reveal><a class="capture-link" href="assets/overview.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面中的模组总览，展示虚构示例模组列表、版本与扫描结果" data-i18n-aria-label="overviewAlt"><img src="assets/overview.webp" alt="DAMN 中文桌面界面中的模组总览，展示虚构示例模组列表、版本与扫描结果" data-i18n-alt="overviewAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="overviewCaption" >模组总览 · 真实桌面界面，虚构演示快照</figcaption></figure>
-<div class="network-story story-row"><figure class="product-figure " data-reveal><a class="capture-link" href="assets/network.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面的依赖网络，展示虚构示例模组之间的关联" data-i18n-aria-label="networkAlt"><img src="assets/network.webp" alt="DAMN 中文桌面界面的依赖网络，展示虚构示例模组之间的关联" data-i18n-alt="networkAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="networkCaption" >依赖网络 · 真实桌面界面，虚构演示快照</figcaption></figure><div class="story-copy"><h2 data-i18n="networkTitle" data-reveal>顺着关系，找到前置。</h2><p data-i18n="networkCopy" data-reveal>依赖网络呈现模组之间的声明关系。选中一个节点，查看直接关联，区分已有前置与待核对的缺项。</p></div></div>
-<div class="checks-story story-row"><div class="story-copy"><h2 data-i18n="checksTitle" data-reveal>把待核对项，单独列清。</h2><p data-i18n="checksCopy" data-reveal>静态检查帮助定位缺失依赖、版本条件等问题。结果是排查线索；实际加载、运行表现仍需在游戏中验证。</p></div><figure class="product-figure " data-reveal><a class="capture-link" href="assets/checks.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面的静态检查视图，列出虚构演示数据中的待核对问题" data-i18n-aria-label="checksAlt"><img src="assets/checks.webp" alt="DAMN 中文桌面界面的静态检查视图，列出虚构演示数据中的待核对问题" data-i18n-alt="checksAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="checksCaption" >静态检查 · 真实桌面界面，虚构演示快照</figcaption></figure></div>
+<p class="gallery-cue" id="gallery-hint"><span data-i18n="galleryHint">左右滑动查看三个视角；点按图片可放大。</span><span aria-hidden="true">↔</span></p>
+<div class="product-gallery" role="region" tabindex="0" aria-label="产品界面：模组总览、依赖网络与静态检查" data-i18n-aria-label="galleryLabel" aria-describedby="gallery-hint">
+<div class="gallery-panel gallery-overview"><figure class="product-figure overview-figure" data-reveal><a class="capture-link" href="assets/overview.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面中的模组总览，展示虚构示例模组列表、版本与扫描结果" data-i18n-aria-label="overviewAlt"><img src="assets/overview.webp" alt="DAMN 中文桌面界面中的模组总览，展示虚构示例模组列表、版本与扫描结果" data-i18n-alt="overviewAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="overviewCaption" >模组总览 · 真实桌面界面，虚构演示快照</figcaption></figure><div class="story-copy gallery-overview-copy"><h3 data-i18n="galleryOverviewTitle">模组总览</h3><p data-i18n="overviewText">文件与元数据放在一起，先确认你正在分析什么。</p></div></div>
+<div class="network-story story-row gallery-panel"><figure class="product-figure " data-reveal><a class="capture-link" href="assets/network.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面的依赖网络，展示虚构示例模组之间的关联" data-i18n-aria-label="networkAlt"><img src="assets/network.webp" alt="DAMN 中文桌面界面的依赖网络，展示虚构示例模组之间的关联" data-i18n-alt="networkAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="networkCaption" >依赖网络 · 真实桌面界面，虚构演示快照</figcaption></figure><div class="story-copy"><h2 data-i18n="networkTitle" data-reveal>顺着关系，找到前置。</h2><p data-i18n="networkCopy" data-reveal>依赖网络呈现模组之间的声明关系。选中一个节点，查看直接关联，区分已有前置与待核对的缺项。</p></div></div>
+<div class="checks-story story-row gallery-panel"><div class="story-copy"><h2 data-i18n="checksTitle" data-reveal>把待核对项，单独列清。</h2><p data-i18n="checksCopy" data-reveal>静态检查帮助定位缺失依赖、版本条件等问题。结果是排查线索；实际加载、运行表现仍需在游戏中验证。</p></div><figure class="product-figure " data-reveal><a class="capture-link" href="assets/checks.webp" target="_blank" rel="noopener" aria-label="DAMN 中文桌面界面的静态检查视图，列出虚构演示数据中的待核对问题" data-i18n-aria-label="checksAlt"><img src="assets/checks.webp" alt="DAMN 中文桌面界面的静态检查视图，列出虚构演示数据中的待核对问题" data-i18n-alt="checksAlt" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption data-i18n="checksCaption" >静态检查 · 真实桌面界面，虚构演示快照</figcaption></figure></div>
+</div>
 </section>
 <section class="workflow-field" id="get-started" aria-labelledby="workflow-title"><div class="section frame">
 <div class="workflow-heading"><h2 data-i18n="workflowTitle" id="workflow-title" data-reveal>从你的整合包开始。</h2><p data-i18n="workflowIntro" data-reveal>导入、扫描、核对。保留本地证据，再按需要补充联网信息。</p></div>

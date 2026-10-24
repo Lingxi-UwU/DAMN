@@ -15,7 +15,7 @@
     "old binary releases, caches, logs and real scan reports",
     "website preview tools, browser profiles, QA reports and private recordings"
   ],
-  "websiteRevision": "2026-10-25",
+  "websiteRevision": "2026-10-25.2",
   "files": [
     {
       "path": ".gitattributes",
@@ -194,8 +194,8 @@
     {
       "path": "docs/en.html",
       "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
-      "bytes": 20289,
-      "sha256": "cf36762f4a693f65c9253698286fa15c6e61d723a5d8678a3d447cbd7435e3ae"
+      "bytes": 21012,
+      "sha256": "e7701f3c19b3341dc030c1ff3d1dbc1fef3745d14895fa7d489d144b9c6abe55"
     },
     {
       "path": "docs/favicon.svg",
@@ -206,20 +206,20 @@
     {
       "path": "docs/index.html",
       "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
-      "bytes": 19360,
-      "sha256": "34e902c4097ed6cd70c6e41663826503b30a0166cf3445c91c343ff6744bf9b5"
+      "bytes": 20081,
+      "sha256": "be0ca4a1698cc1533ca8484bb47e4dd4fa77042d06952bc902e116d63d5f0e06"
     },
     {
       "path": "docs/site.css",
       "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
-      "bytes": 19794,
-      "sha256": "a3f03a9f6d861a4635fa8b42c686a3c9f4add2f476eca15d466aedcce22a7e47"
+      "bytes": 26717,
+      "sha256": "c5ceb57c991bdb51a0c63ca0f4d459fd36df2c71c2175274e5c47bc7e9ce8a86"
     },
     {
       "path": "docs/site.js",
       "licenseScope": "Accompanying DAMN material; see LICENSE.txt and THIRD-PARTY-NOTICES.md",
-      "bytes": 28459,
-      "sha256": "8f1d0fefd46810c65e488ba7e04c9731f0711655740a8bdf8845f72a872456f7"
+      "bytes": 35115,
+      "sha256": "3457ac30e78c897504c2c50915fcb1cb4705f99254a81c92ef93c1d62239cbd8"
     },
     {
       "path": "enrichment.py",
