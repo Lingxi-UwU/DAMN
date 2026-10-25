@@ -1,0 +1,19 @@
+{
+  "payload": {
+    "schemaVersion": 1,
+    "channel": "preview",
+    "version": "0.6.0",
+    "publishedAt": "2026-10-25T17:16:12Z",
+    "notes": [
+      "加入 GitHub 在线更新：支持正式版与测试版通道。",
+      "可手动检查，或在启动时检查并提醒；新版准备好后再提示“重启使用新版”。",
+      "更新信息带数字签名，安装包经完整性校验；保留本地设置和 AI 配置。"
+    ],
+    "asset": {
+      "url": "https://github.com/Lingxi-UwU/DAMN/releases/download/v0.6.0/DAMN-0.6.0-Windows-x64.exe",
+      "size": 20626901,
+      "sha256": "d7f0983b36cd38ea451d4a3590cbf762ffe39490439ab7531c32a5043e20aef3"
+    }
+  },
+  "signature": "6Fz/M61lIxyKui2J+7w3hY3zLajsbeNVtl6ahJZy52e1B4otfzz7D2xumvDZXmkC6T1ocpK0FC+mic+Yi8TTAg=="
+}
